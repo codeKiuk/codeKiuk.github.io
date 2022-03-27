@@ -35,7 +35,7 @@ const Meta = () => {
             />
             <meta name="theme-color" content="#000" />
             <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-            <meta name="description" content={`${BLOG_OWNER_ID} Blog`} />
+            <meta name="description" content={`${BLOG_OWNER_ID}`} />
         </Head>
     )
 }

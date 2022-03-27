@@ -1,19 +1,19 @@
 ---
 title: '재사용 가능한 컴포넌트 만들기'
 excerpt: '풀스택 CRUD 게시판을 하나 만들어보자 라는 생각으로 21.08.15에 시작한 동아리 | 소모임 게시판 서비스 Ginger의 코드를 천천히 뜯어보며 리팩토링 하기로 마음먹었다. 내가 쓴 코드가 일단 돌아만 가는 ~~개노답~~ 코드라는 걸 알고는 있었지만 뭘 어떻게 만들어야 확장성이 좋은 코드인지, 어떻게 짜는 것이 클-린한지 몰랐다.'
-coverImage: '/assets/blog/preview/cover.jpg'
+coverImage: '/assets/blog/reusable-component/preview.png'
 date: '2021-09-01'
 ogImage:
-    url: '/assets/blog/preview/cover.jpg'
+    url: '/assets/blog/reusable-component/preview.png'
 ---
 
 ### 들어가며
 
-풀스택 CRUD 게시판을 하나 만들어보자 라는 생각으로 21.08.15에 시작한 동아리 | 소모임 게시판 서비스 Ginger의 [코드](https://github.com/codeKiuk/Ginger) 를 천천히 뜯어보며 리팩토링 하기로 마음먹었다.
+풀스택 CRUD 게시판을 하나 만들어보자 라는 생각으로 21.08.15에 시작한 동아리 | 소모임 게시판 서비스 Ginger의 <a href="https://github.com/codeKiuk/Ginger">코드</a> 를 천천히 뜯어보며 리팩토링 하기로 마음먹었다.
 
-내가 쓴 코드가 일단 돌아만 가는 ~~개노답~~ 코드라는 걸 알고는 있었지만 뭘 어떻게 만들어야 확장성이 좋은 코드인지, 어떻게 짜는 것이 클-린한지 몰랐다.
+내가 쓴 코드가 일단 돌아만 가는 <s>개노답</s> 코드라는 걸 알고는 있었지만 뭘 어떻게 만들어야 확장성이 좋은 코드인지, 어떻게 짜는 것이 클-린한지 몰랐다.
 
-그러다가 [이 글](https://jbee.io/etc/what-is-good-code/)을 보고 조금의 힌트를 얻어, 선배님이 생각하시는 좋은 코드의 기준인
+그러다가 <a href="https://jbee.io/etc/what-is-good-code/">이 글</a> 을 보고 조금의 힌트를 얻어, 선배님이 생각하시는 좋은 코드의 기준인
 
 -   의존성이 잘 드러나도록 추상화되어 있는가
 
@@ -29,23 +29,23 @@ ogImage:
 
 이 로직들이 어느 파일에 어떻게 존재하는지 파악하는 것이 먼저다.
 
-![redux 구조](/public/assets/blog/reusable-component/directory0.png)
+<img src="/assets/blog/reusable-component/directory0.png" width="200" height="500" />
 
 redux 구조
 
-![Route](/public/assets/blog/reusable-component/directory1.png)
+<img src="/assets/blog/reusable-component/directory1.png" width="200" height="500" />
 
-Route
+컴포넌트들
 
-![스크린샷 2021-09-02 오후 3.13.10.png](/public/assets/blog/reusable-component/directory2.png)
+<img src="/assets/blog/reusable-component/directory2.png" width="200" height="500" />
 
-![Higher Order Components](/public/assets/blog/reusable-component/directory3.png)
+<img src="/assets/blog/reusable-component/directory3.png" width="200" height="500" />
 
-Higher Order Components
+Route & Higher Order Components
 
 Ginger 클라이언트 디렉토리는 어떤 기능을 하는지 (component인지, route page인지, redux인지) 에 따라 폴더 구조를 나눴다.
 
-1. 이 구조가 가질 수 있는 문제점은 플젝 규모가 커지면 코드가 정의된 곳과 이를 사용하는 곳이 멀어질 수 있다는 점.. ~~사실 이미 좀 멀어져 있다.~~
+1. 이 구조가 가질 수 있는 문제점은 플젝 규모가 커지면 코드가 정의된 곳과 이를 사용하는 곳이 멀어질 수 있다는 점.. <s>사실 이미 좀 멀어져 있다...</s>
 2. 또한 MVC라든지 MVVM라든지 디자인 패턴에 대한 지식 없이 구성해서 좋은 의존성에 대한 고민을 많이 못 했다. ⇒ ( components/commons/Pagination.tsx 이라는 컴포넌트 안에 pagination view 로직이 들어있는 동시에 컨텐츠를 가져오는 상태 관련 로직이 동시에 존재하는 등 의존성 분리를 하지 못 했다. )
 
 ### 문제 찾아보기
@@ -56,7 +56,7 @@ Ginger 클라이언트 디렉토리는 어떤 기능을 하는지 (component인�
 
 → withPaperContainer라는 고차컴포넌트를 통해 동아리 게시판 전체 글을 불러오거나 내가 쓴 글, 댓글을 불러오는 등 컨텐츠를 fetch하는 **중복되는 로직**을 한 곳에서 처리했다.
 
-그렇다면 이 외에 재사용 가능하도록 만들어볼 ~~구린~~ 컴포넌트 혹은 view로직과 상태 로직이 같이 있는 복잡한 컴포넌트를 찾아보자.
+그렇다면 이 외에 재사용 가능하도록 만들어볼 <s>구린</s> 컴포넌트 혹은 view로직과 상태 로직이 같이 있는 복잡한 컴포넌트를 찾아보자.
 
 > Sidebar
 
@@ -96,7 +96,7 @@ const onClickContentsMenu = (title: string) => {
 
 > Pagination
 
-글을 쓰게 된 계기인 ~~개구린~~ 페이지네이션 컴포넌트.
+글을 쓰게 된 계기인 <s>개구린</s> 페이지네이션 컴포넌트.
 
 먼저 바뀌기 전 코드를 보자.
 
@@ -279,7 +279,7 @@ useFetchPage 커스텀 훅으로부터 페이지 클릭 시 해당 페이지의 
 
 이렇게 하면 상태 관련 로직을 모두 커스텀 훅에서 처리할 수 있다.
 
-아래는 ~~이제야 좀~~ 단순해진 Pagination 컴포넌트의 모습이다.
+아래는 <s>이제야 좀</s> 단순해진 Pagination 컴포넌트의 모습이다.
 
 renderPageList로 view 로직만 처리하고 있어 가독성이 훨씬 좋아졌다.
 
@@ -358,9 +358,9 @@ const withPaperContainer = () => {
 
 ### 리팩토링 이후
 
-![스크린샷 2021-09-07 오전 2.01.24.png](/public/assets/blog/reusable-component/performance-before.png)
+<img src="/assets/blog/reusable-component/performance-before.png" width="500" height="300" />
 
-![스크린샷 2021-09-07 오전 2.01.37.png](/public/assets/blog/reusable-component/performance-after.png)
+<img src="/assets/blog/reusable-component/performance-after.png" width="500" height="300" />
 
 성능 개선을 목표로 리팩토링을 시작한 것은 아니었으나.. 성능 개선에 도움이 된 것 같다.
 
