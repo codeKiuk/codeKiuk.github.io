@@ -19,7 +19,10 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
             </div>
             <h3 className="text-3xl mb-3 leading-snug">
                 <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                    <a className="hover:underline" style={{ color: 'black' }}>
+                    <a
+                        className="hover:underline text-2xl font-bold"
+                        style={{ color: 'black' }}
+                    >
                         {title}
                     </a>
                 </Link>
@@ -27,7 +30,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
             <div className="text-lg mb-4">
                 <DateFormatter dateString={date} />
             </div>
-            <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+            <p className="text-base leading-relaxed mb-4">{excerpt}</p>
             <Avatar />
         </div>
     )
