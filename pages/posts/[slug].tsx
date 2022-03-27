@@ -1,3 +1,4 @@
+import hljs from 'highlight.js'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
@@ -10,6 +11,7 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
+import { useEffect } from 'react'
 
 type Props = {
     post: PostType
@@ -22,33 +24,40 @@ const Post = ({ post, morePosts, preview }: Props) => {
     if (!router.isFallback && !post?.slug) {
         return <ErrorPage statusCode={404} />
     }
+
+    useEffect(() => {
+        hljs.initHighlighting()
+    })
+
     return (
-        <Layout preview={preview}>
-            <Container>
-                <Header />
-                {router.isFallback ? (
-                    <PostTitle>Loading…</PostTitle>
-                ) : (
-                    <>
-                        <article className="mb-32">
-                            <Head>
-                                <title>{post.title} | Error</title>
-                                <meta
-                                    property="og:image"
-                                    content={post.ogImage.url}
+        <>
+            <Layout preview={preview}>
+                <Container>
+                    <Header />
+                    {router.isFallback ? (
+                        <PostTitle>Loading…</PostTitle>
+                    ) : (
+                        <>
+                            <article className="mb-32">
+                                <Head>
+                                    <title>{post.title} | Error</title>
+                                    <meta
+                                        property="og:image"
+                                        content={post.ogImage.url}
+                                    />
+                                </Head>
+                                <PostHeader
+                                    title={post.title}
+                                    coverImage={post.coverImage}
+                                    date={post.date}
                                 />
-                            </Head>
-                            <PostHeader
-                                title={post.title}
-                                coverImage={post.coverImage}
-                                date={post.date}
-                            />
-                            <PostBody content={post.content} />
-                        </article>
-                    </>
-                )}
-            </Container>
-        </Layout>
+                                <PostBody content={post.content} />
+                            </article>
+                        </>
+                    )}
+                </Container>
+            </Layout>
+        </>
     )
 }
 
