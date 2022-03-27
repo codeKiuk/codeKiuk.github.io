@@ -7,8 +7,6 @@ ogImage:
     url: '/assets/blog/vanilajs-to-react/preview.png'
 ---
 
-# Vanila JS로 React 컨셉 따라하기 (feat. Todo List)
-
 올해 2학기에 CEOS 신촌연합창업동아리에 프론트엔드 개발팀으로 참여하게 되었다..!
 
 1주차 과제는 Vanila JS로 todo list 를 만드는 것이었는데, 이번 기회에 **리액트 컨셉**을 바닐라 JS로 구현해보기로 했다.
