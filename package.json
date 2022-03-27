@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
-    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && cd out && git init && git remote add origin https://github.com/codeKiuk/codeKiuk.github.io.git && git add -f . && git commit -m \"Deploy Blog #build\" && git push -f origin main"
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && cd out && git init && git remote add origin https://github.com/codeKiuk/codeKiuk.github.io.git && git add -f . && git commit -m \"Deploy Blog #build\" && git push -f origin main",
+    "dev-deploy": "next build && next export && next start"
   },
   "dependencies": {
     "classnames": "2.3.1",
