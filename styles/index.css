@@ -8,10 +8,10 @@
     ::after {
         font-size: 14px;
 
-        box-sizing: border-box; /* 1 */
-        border-width: 0; /* 2 */
-        border-style: solid; /* 2 */
-        border-color: theme('borderColor.DEFAULT', currentColor); /* 2 */
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: theme('borderColor.DEFAULT', currentColor);
     }
 
     code,
@@ -39,5 +39,13 @@
 
     img {
         margin: auto;
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    ol {
+        list-style: decimal;
     }
 }
