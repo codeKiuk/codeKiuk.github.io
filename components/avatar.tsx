@@ -1,15 +1,13 @@
-type Props = {
-  name: string
-  picture: string
-}
+import { BLOG_OWNER_ID } from '../lib/constants'
+const ProfileImg = '/assets/blog/authors/FIRE.jpeg'
 
-const Avatar = ({ name, picture }: Props) => {
-  return (
-    <div className="flex items-center">
-      <img src={picture} className="w-12 h-12 rounded-full mr-4" alt={name} />
-      <div className="text-xl font-bold">{name}</div>
-    </div>
-  )
+const Avatar = () => {
+    return (
+        <div className="flex items-center">
+            <img src={ProfileImg} className="w-12 h-12 rounded-full mr-4" />
+            <div className="text-xl font-bold">{BLOG_OWNER_ID}</div>
+        </div>
+    )
 }
 
 export default Avatar
