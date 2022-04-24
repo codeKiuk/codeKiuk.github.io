@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="apple-touch-icon" sizes="180x180" href="/favicon/fire.jpeg"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon/fire.jpeg"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon/fire.jpeg"/><link rel="manifest" href="/favicon/fire.jpeg"/><link rel="mask-icon" href="/favicon/fire.jpeg" color="#000000"/><link rel="shortcut icon" href="/favicon/fire.jpeg"/><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-config" content="/favicon/browserconfig.xml"/><meta name="theme-color" content="#000"/><link rel="alternate" type="application/rss+xml" href="/favicon/fire.jpeg"/><meta name="description" content="codeKiuk"/><title>전역 상태 관리 기능 구현해보기 (feat. only React) | Error</title><meta property="og:image" content="/assets/blog/custom-global-state/preview.png"/><meta name="next-head-count" content="15"/><link rel="preload" href="/_next/static/css/02cef8d60abc4ccd.css" as="style"/><link rel="stylesheet" href="/_next/static/css/02cef8d60abc4ccd.css" data-n-g=""/><link rel="preload" href="/_next/static/css/e1f6961df2961232.css" as="style"/><link rel="stylesheet" href="/_next/static/css/e1f6961df2961232.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-69bfa6990bb9e155.js" defer=""></script><script src="/_next/static/chunks/framework-5f4595e5518b5600.js" defer=""></script><script src="/_next/static/chunks/main-38102973b285480e.js" defer=""></script><script src="/_next/static/chunks/pages/_app-20835bb07712f6c7.js" defer=""></script><script src="/_next/static/chunks/202-c144248cd2d53e87.js" defer=""></script><script src="/_next/static/chunks/72-32489d1a2b163d71.js" defer=""></script><script src="/_next/static/chunks/pages/posts/%5Bslug%5D-336c2ced50a7659a.js" defer=""></script><script src="/_next/static/1ougnSbgCeokHucbmlfpM/_buildManifest.js" defer=""></script><script src="/_next/static/1ougnSbgCeokHucbmlfpM/_ssgManifest.js" defer=""></script><script src="/_next/static/1ougnSbgCeokHucbmlfpM/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><div class="min-h-screen"><main><div class="container mx-auto px-5"><h2 class="text-xl md:text-2xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8"><a class="hover:underline" style="color:black" href="/">Kiuk</a>.</h2><article class="mb-32"><h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">전역 상태 관리 기능 구현해보기 (feat. only React)</h1><div class="hidden md:block md:mb-12"><div class="flex items-center"><img src="/assets/blog/authors/FIRE.jpeg" class="w-12 h-12 rounded-full mr-4"/><div class="text-xl font-bold"><a style="color:black">codeKiuk</a></div></div></div><div class="mb-8 md:mb-16 sm:mx-0"><div class="sm:mx-0"><img src="/assets/blog/custom-global-state/preview.png" alt="Cover Image for 전역 상태 관리 기능 구현해보기 (feat. only React)" class="shadow-sm"/></div></div><div class="max-w-2xl mx-auto"><div class="block md:hidden mb-6"><div class="flex items-center"><img src="/assets/blog/authors/FIRE.jpeg" class="w-12 h-12 rounded-full mr-4"/><div class="text-xl font-bold"><a style="color:black">codeKiuk</a></div></div></div><div class="mb-6 text-lg"><time dateTime="2021-09-28">September	28, 2021</time></div></div><div class="max-w-3xl mx-auto"><div class="markdown-styles_markdown__h_8de"><h3>링크</h3>
+<p><a href="https://react-todo-14th-o58e65h1y-codekiuk.vercel.app">React-Todo</a></p>
+<h3>들어가며</h3>
+<p>앞서 바닐라 JS 과제에서는 전역 상태 관리 기능을 구현하지 않아서 부모 컴포넌트에 자식 컴포넌트들 간 의존하고 있는 state을 두어 이를 자식들에게 props로 넘겨주는 전통적인 React의 <strong>State 끌어올리기</strong> 방식을 사용했다. <a href="https://ko.reactjs.org/docs/lifting-state-up.html">참고 - State 끌어올리기</a></p>
+<p>따라서 이번에 React로 todo list 를 구현할 때에는 <strong>전역 상태 관리 기능 구현</strong>에 집중해보기로 했다.</p>
+<h3>신경 쓴 포인트</h3>
+<ul>
+<li><strong>디렉토리 구조 :</strong></li>
+</ul>
+<p>이전까지는</p>
+<pre><code>-components
+-redux
+-pages
+-hooks
+</code></pre>
+<p>지금까지는 이런 식으로 개발자의 입장에서 <strong>코드의 역할, 계층</strong>을 기준으로 패키지 구조를 가져갔다면,</p>
+<p>이번에는 아래와 같이 어플리케이션의 각 기능을 기준으로 패키기 구조를 가져가보기로 했다.</p>
+<pre><code>-@shared (어플리케이션 공통으로 쓰이는 것들)
+-components
+-hooks
+-api
+-todo-list
+-components
+-hooks
+-api
+-login
+-components
+-hooks
+-api
+-logout
+-user
+...
+</code></pre>
+<p>이렇게 하면 코드를 수정할 때 디렉토리를 여러 군데 옮겨 다니면서 작업하지 않아도 되는 장점이 있다!</p>
+<p>기존의 코드 역할 기준 패키지 구조는 특정 기능을 리팩토링할 때 여러 디렉토리를 거쳐가며 수정해야 했기에 번거로웠다.</p>
+<p>⇒ todo list 기능을 위한 코드가 components, redux, hooks 등 여러 디렉토리에 나뉘어 있기 때문..</p>
+<p><a href="https://ahnheejong.name/articles/package-structure-with-the-principal-of-locality-in-mind/">패키지 구조 관련 참고 글</a></p>
+<p>사실 장단점을 느낄 수도 없을 만큼 작은 프로그램이라 그냥 패키지 만들어 보는 연습 삼아 해봤다,,,</p>
+<ul>
+<li>
+<p><strong>전역 상태 관리 :</strong>
+React 에서 제공하는 Custom Hook과 JS의 Class 기능을 사용했다.
+전역 상태 관리용 store 객체는</p>
+<ol>
+<li>상태 가져오기 (getState)</li>
+<li>상태 변경하기 (setState)</li>
+<li>변경된 상태에 반응하여 업데이트하기
+기능이 필요하다.
+아래는 Custom Atom 구현 내용이다.</li>
+</ol>
+<pre><code>class waitingTodosAtom {
+    constructor() {
+        this.state = []
+        this.setters = []
+    }
+
+    getState() {
+        return this.state
+    }
+
+    setState(nextState) {
+        this.state = nextState
+        this.setters.forEach((setter) => setter(this.state))
+    }
+
+    update(setter) {
+        if (this.setters.includes(setter)) {
+            return
+        }
+
+        this.setters.push(setter)
+
+        // cleaner
+        return () => {
+            const idx = this.setters.findIndex(setter)
+            this.setters.splice(idx, 1)
+        }
+    }
+}
+</code></pre>
+<p>원래 목표했던 바는 아래와 같다.</p>
+</li>
+</ul>
+
+📎 전역 상태를 가지는 atom 객체(store) 에서 상태를 가져오는 getter 함수와 상태를 업데이트하는 setter 함수를 Custom Hook을 통해 Presenter 컴포넌트가 사용하도록 해보자.
+
+<h3>그러나...</h3>
+<p>급하게 구현하려고 하기도 했고, 변경된 상태에 반응하여 업데이트하는 부분에서 에러가 많이 나왔다.</p>
+<p>처음에 atom 객체를 일반 객체로 만들었다가, 함수로 만들어서 객체를 리턴했다가,</p>
+<pre><code>new Function()
+</code></pre>
+<p>으로도 만들어봤는데 결국 클래스로 구현했다.. 역시 클래스가 '구현'에 있어서는 정말.. 좋은 것 같다.</p>
+<p>어쨌거나 성공한 줄 알았는데 몇 번 테스트 해보니 대기리스트와 완료리스트 간 아이템 삭제 및 status 변경에서 계속 오류가 난다,, ㅜㅜ</p>
+<p>자료구조 수업때부터 느꼈지만 구현은 정말 어려운 것 같다 ㅠ~~~ 주말에 더 수정해봐야겠다.</p>
+<p><s>그냥 context api 쓸 걸 ...</s></p>
+<h3><strong>문제 해결</strong></h3>
+<p>오류 수정 전에 Atom 코드에서 custom hook의 상태를 리턴을 해줬는데,</p>
+<p><strong>Custom Hook 의 상태는 해당 훅을 구독하는 컴포넌트끼리 공유되지 않기 때문</strong>에 오류가 났었다.</p>
+<p>그래서 전역 상태를 가지는 Atom의 state을 반환시켜줬더니,, 잘 돌아간다..ㅎ...</p>
+<p>(혹은 React에서 기본적으로 제공하는 hook인 useRef 를 통해 상태를 공유할 수 있다. useRef로 저장한 값은 물론 변할 때마다 리렌더를 유도하지는 않지만,,)</p>
+<h3>Why Atoms ?</h3>
+<p>Recoil과 React의 Context API 의 차이점을 잘 설명해준 링크다!</p>
+<p>Context의 경우 Context의 모든 컨슈머 컴포넌트가 리렌더링되는 반면 Recoil의 경우 atomFamily라는 함수를 통해 독립적인 값을 가질 수 있는 컨슈머 컴포넌트들을 분리할 수 있다.</p>
+<p>(<strong>동적으로</strong> atom을 만들 수 있다!)</p>
+<img src="/assets/blog/custom-global-state/atom.png">
+<p>vs <a href="https://ui.toast.com/weekly-pick/ko_20200616#context-api%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%80-%EC%96%B4%EB%96%A8%EA%B9%8C">Context API</a></p></div></div></article></div></main></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"전역 상태 관리 기능 구현해보기 (feat. only React)","date":"2021-09-28","slug":"custom-global-state","content":"\u003ch3\u003e링크\u003c/h3\u003e\n\u003cp\u003e\u003ca href=\"https://react-todo-14th-o58e65h1y-codekiuk.vercel.app\"\u003eReact-Todo\u003c/a\u003e\u003c/p\u003e\n\u003ch3\u003e들어가며\u003c/h3\u003e\n\u003cp\u003e앞서 바닐라 JS 과제에서는 전역 상태 관리 기능을 구현하지 않아서 부모 컴포넌트에 자식 컴포넌트들 간 의존하고 있는 state을 두어 이를 자식들에게 props로 넘겨주는 전통적인 React의 \u003cstrong\u003eState 끌어올리기\u003c/strong\u003e 방식을 사용했다. \u003ca href=\"https://ko.reactjs.org/docs/lifting-state-up.html\"\u003e참고 - State 끌어올리기\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e따라서 이번에 React로 todo list 를 구현할 때에는 \u003cstrong\u003e전역 상태 관리 기능 구현\u003c/strong\u003e에 집중해보기로 했다.\u003c/p\u003e\n\u003ch3\u003e신경 쓴 포인트\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e디렉토리 구조 :\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e이전까지는\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e-components\n-redux\n-pages\n-hooks\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e지금까지는 이런 식으로 개발자의 입장에서 \u003cstrong\u003e코드의 역할, 계층\u003c/strong\u003e을 기준으로 패키지 구조를 가져갔다면,\u003c/p\u003e\n\u003cp\u003e이번에는 아래와 같이 어플리케이션의 각 기능을 기준으로 패키기 구조를 가져가보기로 했다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e-@shared (어플리케이션 공통으로 쓰이는 것들)\n-components\n-hooks\n-api\n-todo-list\n-components\n-hooks\n-api\n-login\n-components\n-hooks\n-api\n-logout\n-user\n...\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e이렇게 하면 코드를 수정할 때 디렉토리를 여러 군데 옮겨 다니면서 작업하지 않아도 되는 장점이 있다!\u003c/p\u003e\n\u003cp\u003e기존의 코드 역할 기준 패키지 구조는 특정 기능을 리팩토링할 때 여러 디렉토리를 거쳐가며 수정해야 했기에 번거로웠다.\u003c/p\u003e\n\u003cp\u003e⇒ todo list 기능을 위한 코드가 components, redux, hooks 등 여러 디렉토리에 나뉘어 있기 때문..\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://ahnheejong.name/articles/package-structure-with-the-principal-of-locality-in-mind/\"\u003e패키지 구조 관련 참고 글\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e사실 장단점을 느낄 수도 없을 만큼 작은 프로그램이라 그냥 패키지 만들어 보는 연습 삼아 해봤다,,,\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e전역 상태 관리 :\u003c/strong\u003e\nReact 에서 제공하는 Custom Hook과 JS의 Class 기능을 사용했다.\n전역 상태 관리용 store 객체는\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e상태 가져오기 (getState)\u003c/li\u003e\n\u003cli\u003e상태 변경하기 (setState)\u003c/li\u003e\n\u003cli\u003e변경된 상태에 반응하여 업데이트하기\n기능이 필요하다.\n아래는 Custom Atom 구현 내용이다.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode\u003eclass waitingTodosAtom {\n    constructor() {\n        this.state = []\n        this.setters = []\n    }\n\n    getState() {\n        return this.state\n    }\n\n    setState(nextState) {\n        this.state = nextState\n        this.setters.forEach((setter) =\u003e setter(this.state))\n    }\n\n    update(setter) {\n        if (this.setters.includes(setter)) {\n            return\n        }\n\n        this.setters.push(setter)\n\n        // cleaner\n        return () =\u003e {\n            const idx = this.setters.findIndex(setter)\n            this.setters.splice(idx, 1)\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e원래 목표했던 바는 아래와 같다.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\n📎 전역 상태를 가지는 atom 객체(store) 에서 상태를 가져오는 getter 함수와 상태를 업데이트하는 setter 함수를 Custom Hook을 통해 Presenter 컴포넌트가 사용하도록 해보자.\n\n\u003ch3\u003e그러나...\u003c/h3\u003e\n\u003cp\u003e급하게 구현하려고 하기도 했고, 변경된 상태에 반응하여 업데이트하는 부분에서 에러가 많이 나왔다.\u003c/p\u003e\n\u003cp\u003e처음에 atom 객체를 일반 객체로 만들었다가, 함수로 만들어서 객체를 리턴했다가,\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003enew Function()\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e으로도 만들어봤는데 결국 클래스로 구현했다.. 역시 클래스가 '구현'에 있어서는 정말.. 좋은 것 같다.\u003c/p\u003e\n\u003cp\u003e어쨌거나 성공한 줄 알았는데 몇 번 테스트 해보니 대기리스트와 완료리스트 간 아이템 삭제 및 status 변경에서 계속 오류가 난다,, ㅜㅜ\u003c/p\u003e\n\u003cp\u003e자료구조 수업때부터 느꼈지만 구현은 정말 어려운 것 같다 ㅠ~~~ 주말에 더 수정해봐야겠다.\u003c/p\u003e\n\u003cp\u003e\u003cs\u003e그냥 context api 쓸 걸 ...\u003c/s\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong\u003e문제 해결\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e오류 수정 전에 Atom 코드에서 custom hook의 상태를 리턴을 해줬는데,\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eCustom Hook 의 상태는 해당 훅을 구독하는 컴포넌트끼리 공유되지 않기 때문\u003c/strong\u003e에 오류가 났었다.\u003c/p\u003e\n\u003cp\u003e그래서 전역 상태를 가지는 Atom의 state을 반환시켜줬더니,, 잘 돌아간다..ㅎ...\u003c/p\u003e\n\u003cp\u003e(혹은 React에서 기본적으로 제공하는 hook인 useRef 를 통해 상태를 공유할 수 있다. useRef로 저장한 값은 물론 변할 때마다 리렌더를 유도하지는 않지만,,)\u003c/p\u003e\n\u003ch3\u003eWhy Atoms ?\u003c/h3\u003e\n\u003cp\u003eRecoil과 React의 Context API 의 차이점을 잘 설명해준 링크다!\u003c/p\u003e\n\u003cp\u003eContext의 경우 Context의 모든 컨슈머 컴포넌트가 리렌더링되는 반면 Recoil의 경우 atomFamily라는 함수를 통해 독립적인 값을 가질 수 있는 컨슈머 컴포넌트들을 분리할 수 있다.\u003c/p\u003e\n\u003cp\u003e(\u003cstrong\u003e동적으로\u003c/strong\u003e atom을 만들 수 있다!)\u003c/p\u003e\n\u003cimg src=\"/assets/blog/custom-global-state/atom.png\"\u003e\n\u003cp\u003evs \u003ca href=\"https://ui.toast.com/weekly-pick/ko_20200616#context-api%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%80-%EC%96%B4%EB%96%A8%EA%B9%8C\"\u003eContext API\u003c/a\u003e\u003c/p\u003e","ogImage":{"url":"/assets/blog/custom-global-state/preview.png"},"coverImage":"/assets/blog/custom-global-state/preview.png"}},"__N_SSG":true},"page":"/posts/[slug]","query":{"slug":"custom-global-state"},"buildId":"1ougnSbgCeokHucbmlfpM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

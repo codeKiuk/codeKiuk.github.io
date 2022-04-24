@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="apple-touch-icon" sizes="180x180" href="/favicon/fire.jpeg"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon/fire.jpeg"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon/fire.jpeg"/><link rel="manifest" href="/favicon/fire.jpeg"/><link rel="mask-icon" href="/favicon/fire.jpeg" color="#000000"/><link rel="shortcut icon" href="/favicon/fire.jpeg"/><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-config" content="/favicon/browserconfig.xml"/><meta name="theme-color" content="#000"/><link rel="alternate" type="application/rss+xml" href="/favicon/fire.jpeg"/><meta name="description" content="codeKiuk"/><title>Vanila JS로 React 컨셉 따라하기 (feat. Todo List) | Error</title><meta property="og:image" content="/assets/blog/vanilajs-to-react/preview.png"/><meta name="next-head-count" content="15"/><link rel="preload" href="/_next/static/css/02cef8d60abc4ccd.css" as="style"/><link rel="stylesheet" href="/_next/static/css/02cef8d60abc4ccd.css" data-n-g=""/><link rel="preload" href="/_next/static/css/e1f6961df2961232.css" as="style"/><link rel="stylesheet" href="/_next/static/css/e1f6961df2961232.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-69bfa6990bb9e155.js" defer=""></script><script src="/_next/static/chunks/framework-5f4595e5518b5600.js" defer=""></script><script src="/_next/static/chunks/main-38102973b285480e.js" defer=""></script><script src="/_next/static/chunks/pages/_app-20835bb07712f6c7.js" defer=""></script><script src="/_next/static/chunks/202-c144248cd2d53e87.js" defer=""></script><script src="/_next/static/chunks/72-32489d1a2b163d71.js" defer=""></script><script src="/_next/static/chunks/pages/posts/%5Bslug%5D-336c2ced50a7659a.js" defer=""></script><script src="/_next/static/1ougnSbgCeokHucbmlfpM/_buildManifest.js" defer=""></script><script src="/_next/static/1ougnSbgCeokHucbmlfpM/_ssgManifest.js" defer=""></script><script src="/_next/static/1ougnSbgCeokHucbmlfpM/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><div class="min-h-screen"><main><div class="container mx-auto px-5"><h2 class="text-xl md:text-2xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8"><a class="hover:underline" style="color:black" href="/">Kiuk</a>.</h2><article class="mb-32"><h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">Vanila JS로 React 컨셉 따라하기 (feat. Todo List)</h1><div class="hidden md:block md:mb-12"><div class="flex items-center"><img src="/assets/blog/authors/FIRE.jpeg" class="w-12 h-12 rounded-full mr-4"/><div class="text-xl font-bold"><a style="color:black">codeKiuk</a></div></div></div><div class="mb-8 md:mb-16 sm:mx-0"><div class="sm:mx-0"><img src="/assets/blog/vanilajs-to-react/preview.png" alt="Cover Image for Vanila JS로 React 컨셉 따라하기 (feat. Todo List)" class="shadow-sm"/></div></div><div class="max-w-2xl mx-auto"><div class="block md:hidden mb-6"><div class="flex items-center"><img src="/assets/blog/authors/FIRE.jpeg" class="w-12 h-12 rounded-full mr-4"/><div class="text-xl font-bold"><a style="color:black">codeKiuk</a></div></div></div><div class="mb-6 text-lg"><time dateTime="2021-09-21">September	21, 2021</time></div></div><div class="max-w-3xl mx-auto"><div class="markdown-styles_markdown__h_8de"><p>올해 2학기에 CEOS 신촌연합창업동아리에 프론트엔드 개발팀으로 참여하게 되었다..!</p>
+<p>1주차 과제는 Vanila JS로 todo list 를 만드는 것이었는데, 이번 기회에 <strong>리액트 컨셉</strong>을 바닐라 JS로 구현해보기로 했다.</p>
+<h3>들어가며</h3>
+<p>프론트엔드 개발에 자주 사용되는 <strong>React</strong> 는</p>
+<ol>
+<li>MVC 패턴의 View 를 위한 페이스북의 오픈 소스 라이브러리이면서</li>
+<li><strong>상태를 가지는 Component</strong> 를 기반으로 UI를 구성한다.</li>
+</ol>
+<p>컴포넌트가 상태를 가지기 때문에 리액트는 해당 상태가 변경됨에 따라 Virtual DOM을 재조정하게 된다. (prevState과 nextState을 비교하여 달라진 경우에만 Virtual DOM 복사) <a href="https://ko.reactjs.org/docs/faq-internals.html">참고</a></p>
+<img src="/assets/blog/vanilajs-to-react/reconciliation.png">
+<p>16.8 버전 이전에는 <strong>클래스형 컴포넌트</strong>로 여러 라이프 사이클 메서드들 (componentiDdMount, componentShouldUpdate, componentWillunMount 등) 을 통해 렌더링 로직을 다뤘다면,</p>
+<p>16.8 버전부터는 Hook을 도입하여 <strong>함수형 컴포넌트</strong>의 useEffect와 다양한 Cutom Hook을 통해 "<strong>상태 변화를 기준으로 렌더링</strong>"을 하는 데에 집중할 수 있게 됐다.</p>
+<p>⇒ <strong>useEffect</strong>의 두 번째 인자에 상태변화를 포착하고자 하는 data를 전달함으로써 해당 data가 변경됐을 때만 특정 로직을 수행한다. (리렌더링 등)</p>
+<p>⇒ 다른 <strong>Custom hook</strong>을 subscribe하여 해당 훅의 상태가 변할 때에만 컴포넌트를 리렌더링한다.</p>
+<h3>State을 가지는 Component 를 구현해보자</h3>
+<p>아니 그래서,, 이번 Vanila JS 과제에서 위에서 말한 "상태 변화를 기준으로 컴포넌트 렌더링"에 집중해봤다는 말이다,,</p>
+<p>이를 위해 최상위 컴포넌트 한 개를 포함한 <strong>네 개의 컴포넌트</strong>를 만들었고 각각 모듈로 분리를 했다.</p>
+<p>먼저 최상위 컴포넌트에서 모든 상태와 이 상태를 바꾸는 함수를 가지고 있고 이를 props로 하위 컴포넌트들에 내려주어서 컴포넌트들끼리 의존성을 만들어주었다.</p>
+<img src="/assets/blog/vanilajs-to-react/architecture.png">
+<p>이후 <strong>상태 기준 렌더링</strong>을 위해 아래처럼 state이 바뀌어야 렌더링이 일어날 수 있도록 <strong>render 함수는 setState 함수 내부에서만 호출</strong>하도록 구현했다.</p>
+<pre><code>// WaitingList.js
+
+function WaitingList({location, initialState, onClickTodoItem, onDeleteTodoItem}) {
+
+    this.state = {...initialState};
+
+    this.setState = (nextState) => {
+        this.state = {
+            ...this.state,
+            ...nextState
+        }
+
+        this.render();
+    }
+
+    this.render = (waitingTodo) => {
+						// Render Logic
+    }
+
+    this.render(this.state.waitingTodo);
+}
+
+export default WaitingList
+
+// App.js
+
+function App() {
+
+
+	// ...
+
+	WaitingList = new WaitingList({some parameters})
+
+}
+</code></pre>
+<h3>Trouble Shooting</h3>
+<p>Todo Item 각각에 대해 ID를 줄 때 어떻게 줄까..하다가 그냥 1부터 증가하도록 만들었는데 코드 리뷰로 선종님이 unix timestamp 라는 좋은 방법을 알려주셔서.. 이대로 코드 리팩토링해보도록하자,,</p></div></div></article></div></main></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"Vanila JS로 React 컨셉 따라하기 (feat. Todo List)","date":"2021-09-21","slug":"vanilajs-to-react","content":"\u003cp\u003e올해 2학기에 CEOS 신촌연합창업동아리에 프론트엔드 개발팀으로 참여하게 되었다..!\u003c/p\u003e\n\u003cp\u003e1주차 과제는 Vanila JS로 todo list 를 만드는 것이었는데, 이번 기회에 \u003cstrong\u003e리액트 컨셉\u003c/strong\u003e을 바닐라 JS로 구현해보기로 했다.\u003c/p\u003e\n\u003ch3\u003e들어가며\u003c/h3\u003e\n\u003cp\u003e프론트엔드 개발에 자주 사용되는 \u003cstrong\u003eReact\u003c/strong\u003e 는\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eMVC 패턴의 View 를 위한 페이스북의 오픈 소스 라이브러리이면서\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e상태를 가지는 Component\u003c/strong\u003e 를 기반으로 UI를 구성한다.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e컴포넌트가 상태를 가지기 때문에 리액트는 해당 상태가 변경됨에 따라 Virtual DOM을 재조정하게 된다. (prevState과 nextState을 비교하여 달라진 경우에만 Virtual DOM 복사) \u003ca href=\"https://ko.reactjs.org/docs/faq-internals.html\"\u003e참고\u003c/a\u003e\u003c/p\u003e\n\u003cimg src=\"/assets/blog/vanilajs-to-react/reconciliation.png\"\u003e\n\u003cp\u003e16.8 버전 이전에는 \u003cstrong\u003e클래스형 컴포넌트\u003c/strong\u003e로 여러 라이프 사이클 메서드들 (componentiDdMount, componentShouldUpdate, componentWillunMount 등) 을 통해 렌더링 로직을 다뤘다면,\u003c/p\u003e\n\u003cp\u003e16.8 버전부터는 Hook을 도입하여 \u003cstrong\u003e함수형 컴포넌트\u003c/strong\u003e의 useEffect와 다양한 Cutom Hook을 통해 \"\u003cstrong\u003e상태 변화를 기준으로 렌더링\u003c/strong\u003e\"을 하는 데에 집중할 수 있게 됐다.\u003c/p\u003e\n\u003cp\u003e⇒ \u003cstrong\u003euseEffect\u003c/strong\u003e의 두 번째 인자에 상태변화를 포착하고자 하는 data를 전달함으로써 해당 data가 변경됐을 때만 특정 로직을 수행한다. (리렌더링 등)\u003c/p\u003e\n\u003cp\u003e⇒ 다른 \u003cstrong\u003eCustom hook\u003c/strong\u003e을 subscribe하여 해당 훅의 상태가 변할 때에만 컴포넌트를 리렌더링한다.\u003c/p\u003e\n\u003ch3\u003eState을 가지는 Component 를 구현해보자\u003c/h3\u003e\n\u003cp\u003e아니 그래서,, 이번 Vanila JS 과제에서 위에서 말한 \"상태 변화를 기준으로 컴포넌트 렌더링\"에 집중해봤다는 말이다,,\u003c/p\u003e\n\u003cp\u003e이를 위해 최상위 컴포넌트 한 개를 포함한 \u003cstrong\u003e네 개의 컴포넌트\u003c/strong\u003e를 만들었고 각각 모듈로 분리를 했다.\u003c/p\u003e\n\u003cp\u003e먼저 최상위 컴포넌트에서 모든 상태와 이 상태를 바꾸는 함수를 가지고 있고 이를 props로 하위 컴포넌트들에 내려주어서 컴포넌트들끼리 의존성을 만들어주었다.\u003c/p\u003e\n\u003cimg src=\"/assets/blog/vanilajs-to-react/architecture.png\"\u003e\n\u003cp\u003e이후 \u003cstrong\u003e상태 기준 렌더링\u003c/strong\u003e을 위해 아래처럼 state이 바뀌어야 렌더링이 일어날 수 있도록 \u003cstrong\u003erender 함수는 setState 함수 내부에서만 호출\u003c/strong\u003e하도록 구현했다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e// WaitingList.js\n\nfunction WaitingList({location, initialState, onClickTodoItem, onDeleteTodoItem}) {\n\n    this.state = {...initialState};\n\n    this.setState = (nextState) =\u003e {\n        this.state = {\n            ...this.state,\n            ...nextState\n        }\n\n        this.render();\n    }\n\n    this.render = (waitingTodo) =\u003e {\n\t\t\t\t\t\t// Render Logic\n    }\n\n    this.render(this.state.waitingTodo);\n}\n\nexport default WaitingList\n\n// App.js\n\nfunction App() {\n\n\n\t// ...\n\n\tWaitingList = new WaitingList({some parameters})\n\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eTrouble Shooting\u003c/h3\u003e\n\u003cp\u003eTodo Item 각각에 대해 ID를 줄 때 어떻게 줄까..하다가 그냥 1부터 증가하도록 만들었는데 코드 리뷰로 선종님이 unix timestamp 라는 좋은 방법을 알려주셔서.. 이대로 코드 리팩토링해보도록하자,,\u003c/p\u003e","ogImage":{"url":"/assets/blog/vanilajs-to-react/preview.png"},"coverImage":"/assets/blog/vanilajs-to-react/preview.png"}},"__N_SSG":true},"page":"/posts/[slug]","query":{"slug":"vanilajs-to-react"},"buildId":"1ougnSbgCeokHucbmlfpM","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
