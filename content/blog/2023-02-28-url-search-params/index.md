@@ -4,7 +4,7 @@ date: "2023-02-28T16:04:03.284Z"
 ---
 
 > **react-query**로 _client state와 server state의 분리_ 를 통한 **source of truth**를 실현한 [Tanner Linsely](https://github.com/tannerlinsley)가 만든 다른 오픈소스 프로젝트인 **tanstack-router**를 우연히 접했었는데,
-> **tanstack-router**에서 강조한 url search params를 활용한 data fetching orchestration을 간단하게나마 적용해서 재밌었다! (물론 크게 복잡한 작업은 아니어서 tanstack-router 를 적용하진 않았고 plain하게 URL SearchParams를 조작했다.)
+> **tanstack-router**에서 강조한 url search params를 활용한 data fetching orchestration을 간단하게 적용해봤다. (물론 크게 복잡한 작업은 아니어서 tanstack-router 를 적용하진 않았고 plain하게 URL SearchParams를 조작했다.)
 
 **참조**
 
@@ -36,7 +36,7 @@ date: "2023-02-28T16:04:03.284Z"
 4. 추가된 기능 작업
 5. 기존 이벤트 동일하게 이식하는 작업
 
-이 중 4번. 추가된 기능 작업을 할 때 URL SearchParams를 조금 활용해보기로 했다.
+이 중 4번. 추가된 기능 작업을 할 때 URL SearchParams를 활용해보기로 했다.
 
 ### 언제 활용했나!
 
@@ -48,7 +48,7 @@ date: "2023-02-28T16:04:03.284Z"
 
 즉, 리스트 데이터를 fetch할 때 **여러가지 조건**을 적용하는데 이 조건들을 유려하게 핸들링했어야 했다.
 
-그렇다면 그 여러가지 조건을 조작할 수 있는 영역은 어떤 것들이 있나!
+그렇다면 그 여러가지 조건을 조작할 수 있는 영역은 어떤 것들이 있나??
 
 - 범죄분야를 선택할 수 있는 Select Box 영역
 - 검색어 input field
@@ -60,7 +60,7 @@ date: "2023-02-28T16:04:03.284Z"
 ![1.png](./1.png)
 ![2.png](./2.png)
 
-우리팀은 data fetching 라이브러리로 react-query를 사용하는데, react-query는 선언적으로 사용되게끔 만들어져있다.
+우리 팀은 data fetching 라이브러리로 react-query를 사용하는데, react-query는 선언적으로 사용되게끔 만들어져있다.
 
 그래서 명시적으로 api call 을 refetch하는 기능이 있기보다는, useQuery 라는 함수에 넘기는 **key**값이 변경되면 **알아서 data를 fetch/refetch**하는 형식이다.
 
@@ -116,4 +116,4 @@ return { integratedLawyercontentsData, ... }
 
 이미 서버 상태는 react-query에 맡겨둔 상태이니, react-query를 어떻게 편하게 조작할까? 에서 시작된 search params 활용.
 
-react-query의 data fetch/refetch를 결정하는 **_query key_**값을 전역 상태인 url search params로 조종함으로써 [위 참조글](https://www.notion.so/URL-SearchParams-react-query-data-fetching-orchestration-e6c5460b07274e48af30a381c46f3747?pvs=21)에서 tanstack-router 가 말한 **_data-fetching orchestration_** 을 단순하게나마 경험할 수 있었다.
+react-query의 data fetch/refetch를 결정하는 **_query key_**값을 전역 상태인 url search params로 조종함으로써 [위 참조글](https://www.notion.so/URL-SearchParams-react-query-data-fetching-orchestration-e6c5460b07274e48af30a381c46f3747?pvs=21)에서 tanstack-router 가 말한 **_data-fetching orchestration_** 를 실무에 간단하게 적용해봤다~
