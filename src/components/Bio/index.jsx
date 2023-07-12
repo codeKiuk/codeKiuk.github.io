@@ -43,10 +43,12 @@ export const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
+        <div>
           <strong>{author?.summary || null} </strong>
           <a href={`https://github.com/codeKiuk`}>{`codeKiuk`}</a>
-        </p>
+          <span>,</span>
+          <p>with dev things and daily life.</p>
+        </div>
       )}
     </div>
   )
