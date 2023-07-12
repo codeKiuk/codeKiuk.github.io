@@ -14,11 +14,9 @@ module.exports = {
       name: `codeKiuk`,
       summary: `Personal blog by`,
     },
-    description: ` 거창한 건 아니고, 블로그로 기억을 보조해보자하는 의미..`,
+    description: `Juvantia : (약리학) 보조약 - 거창한 건 아니고, 블로그로 기억을 보조해보자 하는 의미\n개발 관련 글 이외 일상 얘기도 올립니다.`,
     siteUrl: `https://github.com/codeKiuk`,
-    social: {
-      // twitter: `kylemathews`,
-    },
+    social: {},
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -118,7 +116,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         theme_color: `#FF9306`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/profile-pic.png`, // This path is relative to the root of the site.
       },
     },
   ],
