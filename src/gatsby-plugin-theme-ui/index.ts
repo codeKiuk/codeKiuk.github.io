@@ -1,8 +1,8 @@
 import { breakpoints } from "../constants/breakpoints"
-import { colors } from "../constants/colors"
+import colors from "../constants/colors"
 
 const theme = {
-  breakpoints: breakpoints,
+  breakpoints,
   fontSizes: [12, 14, 16, 18, 24, 32, 48, 64, 72],
   fontWeights: {
     body: 400,

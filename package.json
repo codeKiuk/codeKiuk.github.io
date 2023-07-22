@@ -19,6 +19,7 @@
     "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
     "gatsby-plugin-theme-ui": "^0.16.0",
+    "gatsby-plugin-typescript": "^5.11.0",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-remark-prismjs": "^7.11.0",
     "gatsby-remark-responsive-iframe": "^6.11.1",
@@ -32,7 +33,21 @@
     "theme-ui": "^0.16.0"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "@types/node": "^20.4.3",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-next": "^13.4.12",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "^2.8.8",
+    "tsc": "^2.0.4",
+    "typescript": "^5.1.6"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -48,6 +63,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop -p 8008",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint --fix src/**/*.ts",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

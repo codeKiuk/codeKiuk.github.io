@@ -79,6 +79,26 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
+  const output = getConfig().output || {}
+
+  actions.setWebpackConfig({
+    output,
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, "src/components"),
+        utils: path.resolve(__dirname, "src/utils"),
+        hooks: path.resolve(__dirname, "src/hooks"),
+        pages: path.resolve(__dirname, "src/pages"),
+        constants: path.resolve(__dirname, "src/constants"),
+        images: path.resolve(__dirname, "src/images"),
+        static: path.resolve(__dirname, "static"),
+      },
+    },
+  })
+}
+
+
 /**
  * @type {import('gatsby').GatsbyNode['createSchemaCustomization']}
  */
