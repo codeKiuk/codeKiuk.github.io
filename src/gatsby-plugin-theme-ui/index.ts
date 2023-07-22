@@ -1,5 +1,5 @@
-import { breakpoints } from "../constants/breakpoints"
-import colors from "../constants/colors"
+import { breakpoints } from '../constants/breakpoints'
+import colors from '../constants/colors'
 
 const theme = {
   breakpoints,

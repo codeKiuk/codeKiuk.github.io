@@ -5,20 +5,16 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { FC, PropsWithChildren } from "react"
+import * as React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import { FC, PropsWithChildren } from 'react'
 
 type SeoProps = {
   description?: string
   title?: string
 }
 
-export const Seo: FC<PropsWithChildren<SeoProps>> = ({
-  description,
-  title,
-  children,
-}) => {
+export const Seo: FC<PropsWithChildren<SeoProps>> = ({ description, title, children }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -46,10 +42,7 @@ export const Seo: FC<PropsWithChildren<SeoProps>> = ({
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
-      <meta
-        name="twitter:creator"
-        content={site.siteMetadata?.social?.twitter || ``}
-      />
+      <meta name="twitter:creator" content={site.siteMetadata?.social?.twitter || ``} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       {children}

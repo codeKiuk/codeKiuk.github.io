@@ -199,4 +199,4 @@ export default {
     fontSize: ' 14px',
     lineHeight: ' 24px',
   },
-};
+}

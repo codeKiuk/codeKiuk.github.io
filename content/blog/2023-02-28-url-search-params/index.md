@@ -1,6 +1,6 @@
 ---
 title: URL SearchParams 와 react-query의 편리한 data fetching orchestration
-date: "2023-02-28T16:04:03.284Z"
+date: '2023-02-28T16:04:03.284Z'
 ---
 
 > **react-query**로 _client state와 server state의 분리_ 를 통한 **source of truth**를 실현한 [Tanner Linsely](https://github.com/tannerlinsley)가 만든 다른 오픈소스 프로젝트인 **tanstack-router**를 우연히 접했었는데,

@@ -31,10 +31,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   `)
 
   if (result.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
-    )
+    reporter.panicOnBuild(`There was an error loading your blog posts`, result.errors)
     return
   }
 
@@ -86,18 +83,17 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
     output,
     resolve: {
       alias: {
-        components: path.resolve(__dirname, "src/components"),
-        utils: path.resolve(__dirname, "src/utils"),
-        hooks: path.resolve(__dirname, "src/hooks"),
-        pages: path.resolve(__dirname, "src/pages"),
-        constants: path.resolve(__dirname, "src/constants"),
-        images: path.resolve(__dirname, "src/images"),
-        static: path.resolve(__dirname, "static"),
+        components: path.resolve(__dirname, 'src/components'),
+        utils: path.resolve(__dirname, 'src/utils'),
+        hooks: path.resolve(__dirname, 'src/hooks'),
+        pages: path.resolve(__dirname, 'src/pages'),
+        constants: path.resolve(__dirname, 'src/constants'),
+        images: path.resolve(__dirname, 'src/images'),
+        static: path.resolve(__dirname, 'static'),
       },
     },
   })
 }
-
 
 /**
  * @type {import('gatsby').GatsbyNode['createSchemaCustomization']}
