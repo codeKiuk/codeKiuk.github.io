@@ -28,7 +28,7 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Bio />
-      <ol style={{ listStyle: `none` }}>
+      <ol sx={{ flexDirection: 'column', listStyle: `none` }}>
         {posts.map((post: any) => {
           const title = post.frontmatter.title || post.fields.slug
 

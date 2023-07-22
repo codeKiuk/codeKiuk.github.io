@@ -14,7 +14,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "jsxImportSource": "theme-ui"
   },
   "paths": {
     "@components": ["src/components/*"],
