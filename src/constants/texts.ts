@@ -1,200 +1,200 @@
 export default {
-  'display-38-bold': {
+  display38bold: {
     fontWeight: 700,
     fontSize: ' 38px',
     lineHeight: ' 50px',
   },
-  'display-32-bold': {
+  display32bold: {
     fontWeight: 700,
     fontSize: ' 32px',
     lineHeight: ' 42px',
   },
-  'display-28-bold': {
+  display28bold: {
     fontWeight: 700,
     fontSize: ' 28px',
     lineHeight: ' 40px',
   },
-  'display-24-bold': {
+  display24bold: {
     fontWeight: 700,
     fontSize: ' 24px',
     lineHeight: ' 34px',
   },
-  'display-22-bold': {
+  display22bold: {
     fontWeight: 700,
     fontSize: ' 22px',
     lineHeight: ' 32px',
   },
-  'display-38-semi-bold': {
+  display38semibold: {
     fontWeight: 600,
     fontSize: ' 38px',
     lineHeight: ' 50px',
   },
-  'display-28-semi-bold': {
+  display28semibold: {
     fontWeight: 600,
     fontSize: ' 28px',
     lineHeight: ' 40px',
   },
-  'heading-20-bold': {
+  heading20bold: {
     fontWeight: 700,
     fontSize: ' 20px',
     lineHeight: ' 28px',
   },
-  'heading-18-bold': {
+  heading18bold: {
     fontWeight: 700,
     fontSize: ' 18px',
     lineHeight: ' 26px',
   },
-  'heading-16-bold': {
+  heading16bold: {
     fontWeight: 700,
     fontSize: ' 16px',
     lineHeight: ' 24px',
   },
-  'heading-15-bold': {
+  heading15bold: {
     fontWeight: 700,
     fontSize: ' 15px',
     lineHeight: ' 22px',
   },
-  'heading-14-bold': {
+  heading14bold: {
     fontWeight: 700,
     fontSize: ' 14px',
     lineHeight: ' 20px',
   },
-  'heading-13-bold': {
+  heading13bold: {
     fontWeight: 700,
     fontSize: ' 13px',
     lineHeight: ' 18px',
   },
-  'heading-12-bold': {
+  heading12bold: {
     fontWeight: 700,
     fontSize: ' 12px',
     lineHeight: ' 16px',
   },
-  'heading-24-semi-bold': {
+  heading24semibold: {
     fontWeight: 600,
     fontSize: ' 24px',
     lineHeight: ' 34px',
   },
-  'heading-20-semi-bold': {
+  heading20semibold: {
     fontWeight: 600,
     fontSize: ' 20px',
     lineHeight: ' 28px',
   },
-  'heading-18-semi-bold': {
+  heading18semibold: {
     fontWeight: 600,
     fontSize: ' 18px',
     lineHeight: ' 26px',
   },
-  'heading-16-semi-bold': {
+  heading16semibold: {
     fontWeight: 600,
     fontSize: ' 16px',
     lineHeight: ' 24px',
   },
-  'heading-15-semi-bold': {
+  heading15semibold: {
     fontWeight: 600,
     fontSize: ' 15px',
     lineHeight: ' 22px',
   },
-  'heading-14-semi-bold': {
+  heading14semibold: {
     fontWeight: 600,
     fontSize: ' 14px',
     lineHeight: ' 20px',
   },
-  'heading-13-semi-bold': {
+  heading13semibold: {
     fontWeight: 600,
     fontSize: ' 13px',
     lineHeight: ' 18px',
   },
-  'heading-12-semi-bold': {
+  heading12semibold: {
     fontWeight: 600,
     fontSize: ' 12px',
     lineHeight: ' 16px',
   },
-  'heading-20-medium': {
+  heading20medium: {
     fontWeight: 500,
     fontSize: ' 20px',
     lineHeight: ' 28px',
   },
-  'heading-18-medium': {
+  heading18medium: {
     fontWeight: 500,
     fontSize: ' 18px',
     lineHeight: ' 26px',
   },
-  'heading-16-medium': {
+  heading16medium: {
     fontWeight: 500,
     fontSize: ' 16px',
     lineHeight: ' 24px',
   },
-  'heading-15-medium': {
+  heading15medium: {
     fontWeight: 500,
     fontSize: ' 15px',
     lineHeight: ' 22px',
   },
-  'heading-14-medium': {
+  heading14medium: {
     fontWeight: 500,
     fontSize: ' 14px',
     lineHeight: ' 20px',
   },
-  'heading-13-medium': {
+  heading13medium: {
     fontWeight: 500,
     fontSize: ' 13px',
     lineHeight: ' 18px',
   },
-  'heading-12-medium': {
+  heading12medium: {
     fontWeight: 500,
     fontSize: ' 12px',
     lineHeight: ' 16px',
   },
-  'heading-20-regular': {
+  heading20regular: {
     fontWeight: 400,
     fontSize: ' 20px',
     lineHeight: ' 28px',
   },
-  'heading-18-regular': {
+  heading18regular: {
     fontWeight: 400,
     fontSize: ' 18px',
     lineHeight: ' 26px',
   },
-  'heading-16-regular': {
+  heading16regular: {
     fontWeight: 400,
     fontSize: ' 16px',
     lineHeight: ' 24px',
   },
-  'heading-15-regular': {
+  heading15regular: {
     fontWeight: 400,
     fontSize: ' 15px',
     lineHeight: ' 22px',
   },
-  'heading-14-regular': {
+  heading14regular: {
     fontWeight: 400,
     fontSize: ' 14px',
     lineHeight: ' 20px',
   },
-  'heading-13-regular': {
+  heading13regular: {
     fontWeight: 400,
     fontSize: ' 13px',
     lineHeight: ' 18px',
   },
-  'heading-12-regular': {
+  heading12regular: {
     fontWeight: 400,
     fontSize: ' 12px',
     lineHeight: ' 16px',
   },
-  'body-18-regular': {
+  body18regular: {
     fontWeight: 400,
     fontSize: ' 18px',
     lineHeight: ' 34px',
   },
-  'body-16-regular': {
+  body16regular: {
     fontWeight: 400,
     fontSize: ' 16px',
     lineHeight: ' 28px',
   },
-  'body-15-regular': {
+  body15regular: {
     fontWeight: 400,
     fontSize: ' 15px',
     lineHeight: ' 26px',
   },
-  'body-14-regular': {
+  body14regular: {
     fontWeight: 400,
     fontSize: ' 14px',
     lineHeight: ' 24px',

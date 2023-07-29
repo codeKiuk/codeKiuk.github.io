@@ -8,6 +8,11 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Text } from 'theme-ui'
+import colors from '../../constants/colors'
+import { Column } from 'components/common/Column'
+import { Row } from 'components/common/Row'
+import { Space } from 'components/common/Space'
 
 export const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -43,12 +48,19 @@ export const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <div>
-          <strong>{author?.summary || null} </strong>
-          <a href={`https://github.com/${author.name}`}>{author.name}</a>
-          <span>,</span>
-          <p>with dev things and daily life.</p>
-        </div>
+        <Column>
+          <Row>
+            <Text as="span" sx={{ variant: 'text.heading16bold', color: colors.gray[800] }}>
+              {author?.summary || null}
+            </Text>
+            <Space width={4} />
+            <a href={`https://github.com/${author.name}`}>{`${author.name}`}</a>
+            <span>,</span>
+          </Row>
+          <Text as={'p'} sx={{ variant: 'text.heading16regular', color: colors.gray[800] }}>
+            with dev things and daily life.
+          </Text>
+        </Column>
       )}
     </div>
   )

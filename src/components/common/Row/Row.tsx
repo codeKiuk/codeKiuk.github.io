@@ -5,12 +5,7 @@ type RowProps = {} & Omit<FlexProps, 'flexDirection'>
 
 export const Row: FC<PropsWithChildren<RowProps>> = ({ children, ...rest }) => {
   return (
-    <Flex
-      sx={{
-        flexDirection: 'row',
-        ...rest.sx,
-      }}
-    >
+    <Flex sx={{ flexDirection: 'row' }} {...rest}>
       {children}
     </Flex>
   )
