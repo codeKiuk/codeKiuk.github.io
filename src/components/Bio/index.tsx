@@ -36,9 +36,8 @@ export const Bio = () => {
   // const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <Row>
       <StaticImage
-        className="bio-avatar"
         layout="fixed"
         formats={['auto', 'webp', 'avif']}
         src="../../images/profile-pic.png"
@@ -46,7 +45,12 @@ export const Bio = () => {
         height={50}
         quality={95}
         alt="Profile picture"
+        sx={{
+          minWidth: 50,
+          borderRadius: '100%',
+        }}
       />
+      <Space width={4} />
       {author?.name && (
         <Column>
           <Row>
@@ -62,6 +66,6 @@ export const Bio = () => {
           </Text>
         </Column>
       )}
-    </div>
+    </Row>
   )
 }

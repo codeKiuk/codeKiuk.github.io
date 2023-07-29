@@ -1,62 +1,71 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import { Bio } from '../components/Bio'
-import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
+import { Space } from 'components/common/Space'
+import { Container } from 'components/common/Container/Container'
+import { Text } from 'theme-ui'
+import colors from 'constants/colors'
+import { Column } from 'components/common/Column'
+import { Row } from 'components/common/Row'
 
 type BlogIndexProps = {
   data: any
   location: Location
 }
 
-const BlogIndex: React.FC<BlogIndexProps> = ({ data, location }) => {
+const BlogIndex: React.FC<BlogIndexProps> = ({ data }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the directory you specified for the
-          "gatsby-source-filesystem" plugin in gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
   return (
-    <Layout location={location} title={siteTitle}>
+    <Container>
+      <Space height={[32, 48]} />
+      <Text as="h1" sx={{ color: colors.gray[900], variant: 'texts.display38bold' }}>
+        <Link to="/">{siteTitle}</Link>
+      </Text>
+
+      <Space height={[32]} />
+
       <Bio />
-      <ol sx={{ flexDirection: 'column', listStyle: `none` }}>
+
+      <Space height={[32, 48]} />
+
+      <Column as="ol" sx={{ listStyle: `none` }}>
         {posts.map((post: any) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
-              <article className="post-list-item" itemScope itemType="http://schema.org/Article">
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
+            <Column as="li" key={post.fields.slug}>
+              <Space height={[64, 72]} />
+              <Column as="article" itemScope itemType="http://schema.org/Article">
+                <Column as="header">
+                  <Link to={post.fields.slug} itemProp="url">
+                    <Text as="h2" sx={{ '&:hover': { color: colors.primary[500] } }} itemProp="headline">
+                      {title}
+                    </Text>
+                  </Link>
+
+                  <Space height={[16]} />
+
+                  <Text as="small">{post.frontmatter.date}</Text>
+                </Column>
+                <Space height={[20]} />
+                <Row as="section">
+                  <Text
+                    as="p"
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
                   />
-                </section>
-              </article>
-            </li>
+                </Row>
+              </Column>
+            </Column>
           )
         })}
-      </ol>
-    </Layout>
+      </Column>
+    </Container>
   )
 }
 
@@ -67,7 +76,7 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <Seo title="Blog" />
 
 export const pageQuery = graphql`
   {

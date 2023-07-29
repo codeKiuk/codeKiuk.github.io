@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { Space } from 'components/common/Space'
 
 type LayoutProps = {
   location: Location
@@ -27,7 +28,8 @@ export const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({ locatio
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <header>{header}</header>
+      <Space height={[32]} />
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with

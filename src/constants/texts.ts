@@ -1,4 +1,9 @@
 export default {
+  display48bold: {
+    fontWeight: 700,
+    fontSize: ' 38px',
+    lineHeight: ' 60px',
+  },
   display38bold: {
     fontWeight: 700,
     fontSize: ' 38px',
