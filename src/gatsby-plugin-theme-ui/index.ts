@@ -1,7 +1,10 @@
+import { Theme } from 'theme-ui'
 import { breakpoints } from '../constants/breakpoints'
 import colors from '../constants/colors'
 
-const theme = {
+const makeTheme = <T extends Theme>(t: T) => t
+
+const theme = makeTheme({
   breakpoints,
   fontSizes: [12, 14, 16, 18, 24, 32, 48, 64, 72],
   fontWeights: {
@@ -25,6 +28,8 @@ const theme = {
       },
     },
   },
-}
+})
+
+export type ExactTheme = typeof theme
 
 export default theme
