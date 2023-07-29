@@ -8,6 +8,8 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  jsxRuntime: 'automatic',
+  jsxImportSource: 'theme-ui',
   siteMetadata: {
     title: `Juvantia`,
     author: {

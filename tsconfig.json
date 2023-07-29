@@ -8,14 +8,15 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "ES2015",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
     "baseUrl": "./src",
-    "jsxImportSource": "theme-ui"
+    "jsxImportSource": "theme-ui",
+    "types": ["theme-ui"]
   },
   "paths": {
     "@components": ["src/components/*"],
