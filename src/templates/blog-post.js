@@ -2,52 +2,74 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import { Bio } from '../components/Bio'
-import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
+import { Container } from 'components/common/Container/Container'
+import { Column } from 'components/common/Column'
+import { Space } from 'components/common/Space'
+import { Text } from 'theme-ui'
+import colors from 'constants/colors'
+import { Row } from 'components/common/Row'
 
-const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }, location }) => {
+const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post } }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Container>
+      <Space height={[32, 72]} />
+      <Link to="/">
+        <Text as="h3" sx={{ variant: 'text.heading18bold' }}>
+          {siteTitle}
+        </Text>
+      </Link>
+      <Space height={[32, 72]} />
+
       <article className="blog-post" itemScope itemType="http://schema.org/Article">
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
+        <Column as="header">
+          <Text as="h1" itemProp="headline">
+            {post.frontmatter.title}
+          </Text>
+          <Text as="p" sx={{ color: colors.gray[[700]] }}>
+            {post.frontmatter.date}
+          </Text>
+        </Column>
+        <Text as="section" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
         <hr />
-        <footer>
+
+        <Column as="footer">
           <Bio />
-        </footer>
+        </Column>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
+      <Column as="nav">
+        <Row
+          as="ul"
+          sx={{
+            flexWrap: `nowrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
           }}
         >
-          <li>
+          <Row as="li">
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                <Text as="h5" sx={{ color: colors.gray[700], variant: 'text.heading14bold' }}>
+                  ← {previous.frontmatter.title}
+                </Text>
               </Link>
             )}
-          </li>
-          <li>
+          </Row>
+          <Row as="li">
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                <Text as="h5" sx={{ color: colors.gray[700], variant: 'text.heading14bold' }}>
+                  {next.frontmatter.title} →
+                </Text>
               </Link>
             )}
-          </li>
-        </ul>
-      </nav>
-    </Layout>
+          </Row>
+        </Row>
+      </Column>
+      <Space height={[32, 72]} />
+    </Container>
   )
 }
 
