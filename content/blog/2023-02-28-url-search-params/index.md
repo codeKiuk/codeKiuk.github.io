@@ -54,8 +54,8 @@ date: '2023-02-28T16:04:03.284Z'
 
 이렇게 4가지 조건이 합쳐져 리스트를 불러오게 된다.
 
-![1.png](./1.png)
-![2.png](./2.png)
+![contents-section](contents-section.png)
+![pagination](pagination.png)
 
 우리 팀은 data fetching 라이브러리로 react-query를 사용하는데, react-query는 선언적으로 사용되게끔 만들어져있다.
 
