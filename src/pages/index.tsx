@@ -65,6 +65,7 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ data }) => {
           )
         })}
       </Column>
+      <Space height={[60, 120]} />
     </Container>
   )
 }
