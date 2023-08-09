@@ -118,4 +118,4 @@ return { integratedLawyercontentsData, ... }
 
 이미 서버 상태는 react-query에 맡겨둔 상태이니, react-query를 어떻게 편하게 조작할까? 에서 시작된 search params 활용.
 
-react-query의 data fetch/refetch를 결정하는 **_query key_**값을 전역 상태인 url search params로 조종함으로써 [위 참조글](https://www.notion.so/URLSearchParams-react-query-data-fetching-orchestration-e6c5460b07274e48af30a381c46f3747?pvs=21)에서 tanstack-router 가 말한 **_data-fetching orchestration_** 을 단순하게나마 경험할 수 있었다.
+react-query의 data fetch/refetch를 결정하는 **_query key_**값을 전역 상태인 url search params로 조종함으로써 [위 참조글](https://tanstack.com/router/v1/docs/guide/search-params)에서 tanstack-router 가 말한 **_data-fetching orchestration_** 을 단순하게나마 경험할 수 있었다.
