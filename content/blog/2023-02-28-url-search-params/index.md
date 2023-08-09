@@ -7,9 +7,8 @@ date: '2023-02-28T16:04:03.284Z'
 > **tanstack-router**에서 강조한 url search params를 활용한 data fetching orchestration을 간단하게 적용해봤다. (물론 크게 복잡한 작업은 아니어서 tanstack-router 를 적용하진 않았고 plain하게 URL SearchParams를 조작했다.)
 
 **참조**
-특정 url에서 볼 수 있는 ?page=3, ?filter=ascending 등 의 url search params는 url search params가 **전역 상태**와 같은 역할을 할 수 있다는 것을 보여준다.
 
-더불어 아래와 같은 이점도 존재한다.
+특정 url에서 볼 수 있는 ?page=3, ?filter=ascending 등 의 url search params는 url search params가 **전역 상태**와 같은 역할을 할 수 있고, 아래와 같은 이점도 존재한다.
 
 1. 페이지 리로드시에도 동일한 상태를 보여준다.
 2. 링크만 동일하다면 누구에게나 동일한 상태를 보여준다.
