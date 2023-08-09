@@ -1,1 +1,11 @@
-{"data":{"site":{"siteMetadata":{"title":"Gatsby Starter Blog","description":"A starter blog demonstrating what Gatsby can do.","social":{"twitter":"kylemathews"}}}}}
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "title": "Juvantia",
+        "description": "Juvantia : (약리학) 보조약 - 거창한 건 아니고, 블로그로 기억을 보조해보자 하는 의미\n개발 관련 글 이외 일상 얘기도 올립니다.",
+        "social": { "twitter": null }
+      }
+    }
+  }
+}

@@ -1,140 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 Jul 2023 04:20:53 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
-&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;This however showed weasel&lt;/li&gt;
-&lt;li&gt;Well uncritical so misled
-&lt;ul&gt;
-&lt;li&gt;this is very interesting&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
-view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
-&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.&lt;/p&gt;
-&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Juvantia : (약리학) 보조약 - 거창한 건 아니고, 블로그로 기억을 보조해보자 하는 의미
+개발 관련 글 이외 일상 얘기도 올립니다.]]></description><link>https://github.com/codeKiuk</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Aug 2023 13:53:30 GMT</lastBuildDate><item><title><![CDATA[URL SearchParams 와 react-query의 편리한 data fetching orchestration]]></title><description><![CDATA[react-query로 client state와 server state의 분리 를 통한 source of truth를 실현한 Tanner Linsely가 만든 다른 오픈소스 프로젝트인 tanstack-router를 우연히 접했었는데,
+tanstack…]]></description><link>https://github.com/codeKiuk/2023-02-28-url-search-params/</link><guid isPermaLink="false">https://github.com/codeKiuk/2023-02-28-url-search-params/</guid><pubDate>Tue, 28 Feb 2023 16:04:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;react-query&lt;/strong&gt;로 &lt;em&gt;client state와 server state의 분리&lt;/em&gt; 를 통한 &lt;strong&gt;source of truth&lt;/strong&gt;를 실현한 &lt;a href=&quot;https://github.com/tannerlinsley&quot;&gt;Tanner Linsely&lt;/a&gt;가 만든 다른 오픈소스 프로젝트인 &lt;strong&gt;tanstack-router&lt;/strong&gt;를 우연히 접했었는데,
+&lt;strong&gt;tanstack-router&lt;/strong&gt;에서 강조한 url search params를 활용한 data fetching orchestration을 간단하게 적용해봤다. (물론 크게 복잡한 작업은 아니어서 tanstack-router 를 적용하진 않았고 plain하게 URL SearchParams를 조작했다.)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
-&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;참조&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;특정 url에서 볼 수 있는 ?page=3, ?filter=ascending 등 의 url search params는 url search params가 &lt;strong&gt;전역 상태&lt;/strong&gt;와 같은 역할을 할 수 있고, 아래와 같은 이점도 존재한다.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;So baboon this&lt;/li&gt;
-&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
-&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
-&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
-impassive fruitlessly shut&lt;/li&gt;
+&lt;li&gt;페이지 리로드시에도 동일한 상태를 보여준다.&lt;/li&gt;
+&lt;li&gt;링크만 동일하다면 누구에게나 동일한 상태를 보여준다.&lt;/li&gt;
+&lt;li&gt;네비게이션간에 상태 저장이 쉽다.&lt;/li&gt;
+&lt;li&gt;source of truth 원칙을 지키기 쉽다.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word &quot;and&quot; and the Little Blind Text should turn around and
-return to its own, safe country.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.&lt;/p&gt;
-&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
-&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.&lt;/p&gt;
-&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
-&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
-&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.&lt;/p&gt;
-&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word &quot;and&quot; and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/my-second-post/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
-&lt;p&gt;Did you know that &quot;despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich.&quot;?
-(&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn&apos;t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I'm sure I'll write a lot more interesting things in the future. Oh, and here's a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I&apos;m sure I&apos;ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here&apos;s a great quote from this Wikipedia on
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
-eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-charcoal paste. The eggs may also be sold with the salted paste removed,
-wrapped in plastic, and vacuum packed. From the salt curing process, the
-salted duck eggs have a briny aroma, a gelatin-like egg white and a
-firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;tanstack-router의 &lt;a href=&quot;https://tanstack.com/router/v1/docs/guide/search-params&quot;&gt;URL SearchParams를 통한 상태 저장에 관한 글&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;아무튼간 배경부터..&lt;/p&gt;
+&lt;h3&gt;스프린트의 시작&lt;/h3&gt;
+&lt;p&gt;변호사 프로필 페이지를 개선하기 위한 스프린트 플래닝을 할 때 기존에 Vue2로 되어 있는 코드베이스를 Next로 마이그레이션하는 작업도 포함해서 개발하자고 얘기가 되었다.&lt;/p&gt;
+&lt;p&gt;그래서 아래와 같은 순서로 개발이 진행되었다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;변경된 레이아웃 작업&lt;/li&gt;
+&lt;li&gt;변경된 UI 작업&lt;/li&gt;
+&lt;li&gt;기존 기능 동일하게 이식하는 작업&lt;/li&gt;
+&lt;li&gt;추가된 기능 작업&lt;/li&gt;
+&lt;li&gt;기존 이벤트 동일하게 이식하는 작업&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이 중 4번. 추가된 기능 작업을 할 때 URL SearchParams를 활용해보기로 했다.&lt;/p&gt;
+&lt;h3&gt;언제 활용했나!&lt;/h3&gt;
+&lt;p&gt;바로 아래 섹션에서 url search param을 적극 활용하면 react-query를 사용할 때 굉장히 편할 것 같다는 생각을 했다.&lt;/p&gt;
+&lt;p&gt;현재 유저가 보고있는 변호사 프로필 페이지의 변호사 회원이 쓴 글을 검색할 수 있는 섹션이다.&lt;/p&gt;
+&lt;p&gt;범죄분야, 검색어, 변호사 회원이 작성한 글의 타입 (상담, 해결) 에 따라 상이한 검색 결과를 보여준다.&lt;/p&gt;
+&lt;p&gt;즉, 리스트 데이터를 fetch할 때 &lt;strong&gt;여러가지 조건&lt;/strong&gt;을 적용하는데 이 조건들을 유려하게 핸들링했어야 했다.&lt;/p&gt;
+&lt;p&gt;그렇다면 그 여러가지 조건을 조작할 수 있는 영역은 어떤 것들이 있나??&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;범죄분야를 선택할 수 있는 Select Box 영역&lt;/li&gt;
+&lt;li&gt;검색어 input field&lt;/li&gt;
+&lt;li&gt;변호사 회원이 작성한 글의 타입을 변경할 수 있는 (전체, 상담사례, 해결사례로 구성되어 있는) Tab&lt;/li&gt;
+&lt;li&gt;Pagination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이렇게 4가지 조건이 합쳐져 리스트를 불러오게 된다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
+    href=&quot;/static/8a5eb17d0266b2a8a0a236acc6165474/5bb8b/contents-section.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACERIy/9oACAEBAAEFAkqW7B5Zox9t8n//xAAXEQEAAwAAAAAAAAAAAAAAAAAAERJB/9oACAEDAQE/AdVl/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEC/9oACAECAQE/AYun/8QAGxAAAQQDAAAAAAAAAAAAAAAAAAECESEiMTL/2gAIAQEABj8CvRjaHMkvIQo//8QAGxAAAwEBAAMAAAAAAAAAAAAAAREhAEGBobH/2gAIAQEAAT8hsTTH203YINmYDPHckkPzQiGHv//aAAwDAQACAAMAAAAQyC//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAEDAQE/EBHDK6y//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAhUf/aAAgBAgEBPxA6hNC//8QAHBABAQACAwEBAAAAAAAAAAAAAREAMSFhgUHh/9oACAEBAAE/EEbOLQ0eYOEu0eQv0RxZl4JUnWRxGhWneURhyeMTUgiXf5M//9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 158.22784810126583%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAYAAAASYli2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAENElEQVR42o1Wa4/bNhC8//93igLXFmjSBmjuS9MWTe7a+qUn9Rb1okVJlCbYlWTL1ztcBIxJkfZwd3ZI+m4wBmaaMAEYqZ0mjON46U+bMfMGiOtumgClNRxfIM5yOEIgzDKINIVIEoYbRsibBu04Qg0DzsbcQBmDbhx54TsASOoa3z98xP2n33H/20f8/OEDfn14wHf3P+Cn97/gx3fv8dfjE9ppQt33aIbhBvWyCGV1R6yV1rDSFPsoRlzXHE2mFNK6RlJVyJqG+0R2wUJEqIYBrTFzhMSqug6xlIzeDKwn6UoYF23HzdgwTegozQV6GKDXCFlQAJGUOAoBVTeo6xpN0+B8PqOqalRVNY/VDfdpzhj61fxQZKThOFKE48gvVdMgTlKEcYwky5CkGWRRIkoSxIQ0Y6zzuuvmyCnqcYS+Es5pGFxTvGmXFFdrsb0AHiP0C9lwIaQJElVrTDw4A+SnOR8GeazrepZBa422nWEGg3UlJqT86QukFT3j4qfnj+4HNOq86NmgKAoG/XbV8UJIInddx1H2HG3HEW2fF9bYJsBYCIGyrJiQUjdm5L55RrhG8Rzb5xKhLApEccKRvkXwGtmFkD56ErttWfTptdxeTPX5AbIQUiGSNEUYxcilnPVsWwZVVakzFFW366B1B6UU681u2Cxw9aEZ4fk+TpaNOE4gRADX8yCCALbt4Hg8Ybc7wHZcxHGM/f4A3xdcYYrM8D7GbYR+EML1fNgOEUUIwgiW4yIMI46c5jxfcBuEIZNT/2jZyPL8Yrm71XeUClWZdNS6R9/PfWrXPs91Hbq+v7xTf+W4IaS0yXtbXd4uylW7/xUlCEIG6Ue7oSxLLghZifpFWUI160mkbtwwV/lGwwm+EExm2TYs28Fuf2AdqVi24+B4OsHzfJ7zRcCp98O8v1+scpqm/IM0zRBFMRzHg+cJZFnOlacx1/X4O5RJSNkEIQ4nC/WyIVhDs2iWqwZCSoRlAXk+IyxLRFUFUUhIpRBVJXyZ85UgzwqiKLhdizFHuCF0ZY4vgcAX4eOYJvCLArs4wifH5r6VZ/gsfPzte1B0UXUa7dC/ZOy5ynRA8t1Ap003nza673EmmwwDemPQLu+rEy53+MU2G0K+yL/RNmuFt+2NbejUdRyX3S/CkE+fPM8hpWTL5LnkIy7NMpRVxbaieWqpmGSv605ZrgCyyX+7PQ60b/cHxsmyeBHa44THp3/guC4vfjge2VL7/ZFdsNl6q21muyR084URRyRlweP0TvahuSiaLUTvNEe3I3nyxjYT20axRehvSdW2SJv5X4NPabct4qqCm2WIyhK11vDyHEldsVw3O2W1jScl2+ZP18Fn38Mfjo3HQLBNHkMBK0vZRk+BwC6O8W8UsnVesQ3YGmSThm7AtkVNh2vX4dz3KOlwXaxDY/Rvjb6L6bqPV8KvDgmruB3WifIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
+        alt=&quot;contents-section&quot;
         title=&quot;&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg 158w,
-/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg 315w,
-/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg 630w,
-/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg 945w,
-/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg 1260w,
-/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
+        src=&quot;/static/8a5eb17d0266b2a8a0a236acc6165474/f058b/contents-section.png&quot;
+        srcset=&quot;/static/8a5eb17d0266b2a8a0a236acc6165474/c26ae/contents-section.png 158w,
+/static/8a5eb17d0266b2a8a0a236acc6165474/6bdcf/contents-section.png 315w,
+/static/8a5eb17d0266b2a8a0a236acc6165474/f058b/contents-section.png 630w,
+/static/8a5eb17d0266b2a8a0a236acc6165474/5bb8b/contents-section.png 749w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/80ebc27e539768eb70b8120345c7b000/f3abf/pagination.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 13.924050632911392%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAARElEQVR42n2MQQqAMBAD+/+XehSKaG2SEfGmrIG5JGEaRQ5N+jkgIS+qOKFV4zp2lq0TGfthSsj+F0qm4pZ8u5T/OcUF/77ty3FlZFcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pagination&quot;
+        title=&quot;&quot;
+        src=&quot;/static/80ebc27e539768eb70b8120345c7b000/f058b/pagination.png&quot;
+        srcset=&quot;/static/80ebc27e539768eb70b8120345c7b000/c26ae/pagination.png 158w,
+/static/80ebc27e539768eb70b8120345c7b000/6bdcf/pagination.png 315w,
+/static/80ebc27e539768eb70b8120345c7b000/f058b/pagination.png 630w,
+/static/80ebc27e539768eb70b8120345c7b000/40601/pagination.png 945w,
+/static/80ebc27e539768eb70b8120345c7b000/78612/pagination.png 1260w,
+/static/80ebc27e539768eb70b8120345c7b000/f3abf/pagination.png 1474w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -142,176 +105,744 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;You can also write code blocks here!&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; saltyDuckEgg &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;chinese preserved food product&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;Number&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;Title&lt;/th&gt;
-&lt;th align=&quot;right&quot;&gt;Year&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;1&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Philosopher’s Stone&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2001&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;2&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Chamber of Secrets&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2002&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;3&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;Harry Potter and the Prisoner of Azkaban&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;2004&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;a href=&quot;https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md&quot;&gt;View raw (TEST.md)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is a paragraph.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Header 1
-========
+&lt;p&gt;우리 팀은 data fetching 라이브러리로 react-query를 사용하는데, react-query는 선언적으로 사용되게끔 만들어져있다.&lt;/p&gt;
+&lt;p&gt;그래서 명시적으로 api call 을 refetch하는 기능이 있기보다는, useQuery 라는 함수에 넘기는 &lt;strong&gt;key&lt;/strong&gt;값이 변경되면 &lt;strong&gt;알아서 data를 fetch/refetch&lt;/strong&gt;하는 형식이다.&lt;/p&gt;
+&lt;p&gt;그렇다면 useQuery의 refetch가 위에서 말한 &lt;strong&gt;여러가지 조건들에 의존적일 때&lt;/strong&gt; 어떻게 다루면 편할까?&lt;/p&gt;
+&lt;p&gt;fetch/refetch는 &lt;em&gt;query key값이 변경되면 자동으로 수행&lt;/em&gt; 된다고 했다.&lt;/p&gt;
+&lt;p&gt;그러면 &lt;strong&gt;query key를 편하고, 전역적으로 다루면 될 것 같다&lt;/strong&gt;….&lt;/p&gt;
+&lt;p&gt;는 생각에 리로드나 네비게이션간에도 상태가 유지될 수 있고 간편하게 조작할 수 있는 url search params를 활용했다.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;검색어&lt;/em&gt;가 바뀌거나, 셀렉트 박스의 &lt;em&gt;범죄분야&lt;/em&gt;가 바뀌거나, 리스트의 &lt;em&gt;페이지&lt;/em&gt;가 바뀌거나, 상담사례인지 해결사례인지 &lt;em&gt;리스트의 타입&lt;/em&gt;이 바뀔 때마다 &lt;code class=&quot;language-text&quot;&gt;?query=something&amp;amp;page=3&amp;amp;listType=column&lt;/code&gt; 등으로 search params가 변경되면,&lt;/p&gt;
+&lt;p&gt;react-query 의 쿼리들 중 query, page, listType 등의 key값과 매칭되는 value 에 &lt;strong&gt;의존적인 쿼리들&lt;/strong&gt;이 자동으로 data를 fetch/refetch* 하게 된다.&lt;/p&gt;
+&lt;p&gt;예를 들어 이런 식이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;useLawyerContents&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tsx&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
 
-Header 2
---------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1 #
-## Header 2 ##
-### Header 3 ###
-#### Header 4 ####
-##### Header 5 #####
-###### Header 6 ######&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// pagination을 다루는 Hook&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; currentPage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; moveTo &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;usePagination&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 변호사 프로필 페이지에서 쓰이는 url searchParams를 핸들링하는 Hook&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; lawyerId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; contentsType&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; contentsId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; from&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; query&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; subCategory&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ setContentsType&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setQuery&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setSubCategory&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;rest &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useLawyerProfilePageUrlParam&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 특정 변호사 유저가 작성한 모든 컨텐츠(해결사례, 상담사례)를 불러오는 Query&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; data&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; integratedLawyerContentsData &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useGetSimpleSearchResultQuery&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// variables 객체를 통해 queryKey를 만든다.&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// -&gt; variables의 키값들이 변경되면 useGetSimpleSearchResultQuery가 재실행된다.&lt;/span&gt;
+    variables&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      engineName&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;ELASTIC_SEARCH_ENGINE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;integrated-lawyer-contents&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      searchQuery&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; query&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      filters&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; lawyer_id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lawyerId&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      currentPage&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; currentPage &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      size&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;LAWYER_PROFILE_PAGE_ENGINE_SIZE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;integrated-lawyer-contents&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    options&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      enabled&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; contentsType &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;CONTENTS_SECTION_TAB_TYPE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;전체&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; integratedLawyercontentsData&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;결론&lt;/h3&gt;
+&lt;p&gt;이미 서버 상태는 react-query에 맡겨둔 상태이니, react-query를 어떻게 편하게 조작할까? 에서 시작된 search params 활용.&lt;/p&gt;
+&lt;p&gt;react-query의 data fetch/refetch를 결정하는 **&lt;em&gt;query key&lt;/em&gt;**값을 전역 상태인 url search params로 조종함으로써 &lt;a href=&quot;https://tanstack.com/router/v1/docs/guide/search-params&quot;&gt;위 참조글&lt;/a&gt;에서 tanstack-router 가 말한 &lt;strong&gt;&lt;em&gt;data-fetching orchestration&lt;/em&gt;&lt;/strong&gt; 를 실무에 간단하게 적용해봤다~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[보충역 병특 구직 및 개발자 면접 후기]]></title><description><![CDATA[2022 기준 현역 대학생의 병특 편입은 사실상 불가능한 수준이지만 과거 비슷했던 상황을 보면 다시 상황이 풀리는 경우가 있어, IT…]]></description><link>https://github.com/codeKiuk/2022-03-21-military/</link><guid isPermaLink="false">https://github.com/codeKiuk/2022-03-21-military/</guid><pubDate>Mon, 21 Mar 2022 16:04:03 GMT</pubDate><content:encoded>&lt;p&gt;2022 기준 현역 대학생의 병특 편입은 사실상 불가능한 수준이지만 과거 비슷했던 상황을 보면 다시 상황이 풀리는 경우가 있어, IT 산업기능요원을 하고자 하는 &lt;del&gt;저와 같은 하꼬&lt;/del&gt; 대학생들과 저 자신을 위해 후기글을 남겨봅니다..&lt;/p&gt;
+&lt;p&gt;아 물론 개발자 취준할 때도 도움이 될 만한 것들이 있을 수도? (개발자 컬쳐면접에선 뭘 물어보는지, 기술 면접이 어렵다던데 어떻게 어렵게 나오는지..?)&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;p&gt;간단한 배경&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;전공: 문과대학 소속이지만 정보처리 관련 전공에 속하는 과 / 컴퓨터과학 복수전공&lt;/p&gt;
+&lt;p&gt;*본인 전공이 정보처리 관련 학과인지, 본인이 2년 이상 재학했는지 꼭 확인하셔야 합니다! 복전으로 병특하려면 대학 졸업 후에 가능합니다. (2022 기준)&lt;/p&gt;
+&lt;p&gt;인턴: 학교연계 개발 인턴 프로그램 1회 (1개월), 개발 인턴 1회 (2개월)&lt;/p&gt;
+&lt;p&gt;학점: 3.7 ~ 3.8 (서류 및 면접 단계에서 요구하는 경우는 경험하지 못 했다)&lt;/p&gt;
+&lt;p&gt;*아무래도 컴과 본전공생은 아니라 면접단에서 가끔 무슨 무슨 수업들었는지 정도 물어보는 경우는 있었다.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;h2&gt;This is a header.&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;This is the first list item.&lt;/li&gt;
-&lt;li&gt;This is the second list item.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here&apos;s some example code:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Markdown.generate();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;결과&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; ## This is a header.
-&gt; 1. This is the first list item.
-&gt; 2. This is the second list item.
-&gt;
-&gt; Here&apos;s some example code:
-&gt;
-&gt;     Markdown.generate();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;한 달 정도 서탈, 기술면접탈, 컬쳐면접탈을 겪고 최종적으로 세 군데에 합격했고, 한 군데는 컬쳐면접만 남긴 채로 회사를 구할 수 있었다.&lt;/p&gt;
+&lt;p&gt;면접과 과제 전형이 많이 겹쳐서 어쩔 수 없이 과제를 포기한 경우도 가끔 있었다.&lt;/p&gt;
+&lt;p&gt;이메일로 지원한 회사들 중에는 답신조차 없는 경우도 있었고 전화 인터뷰 후 결과 통보를 1달이 넘었는데도 안 오는 회사도 있었다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;과정&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Red&lt;/li&gt;
-&lt;li&gt;Green&lt;/li&gt;
-&lt;li&gt;Blue&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Red
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Green
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Blue
-
-&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Red
-&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Green
-&lt;span class=&quot;token list punctuation&quot;&gt;*&lt;/span&gt; Blue
-
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Red
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Green
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Blue&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`code goes`&lt;/span&gt; here in this line
-&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; goes here&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;서류&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;처음에 지원할 때는 노션으로 pdf를 만들어서 보내거나, 노션 링크를 보냈는데 이력서 관련 정보를 찾다보니 노션으로 만든 이력서나 포트폴리오는&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Buy flour and salt&lt;/li&gt;
-&lt;li&gt;Mix together with water&lt;/li&gt;
-&lt;li&gt;Bake&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;사용자 환경에 따라 의도한 대로 시각화되지 않을 수도 있다는 단점과&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;인터넷 환경이 꼭 필요하다는 점&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;이력서를 읽는 담당자들 중에 노션 이력서를 좋아하지 않는 담당자 분이 있을 수 있다는 점
+등 서류 단계에서 패널티를 얻을 수 있다는 것 때문에 이후에는 노션으로 만든 내용을 markdown으로 export 하고 이걸 pdf로 만들어서 지원했다.
+내용은 아래와 같이 채워넣었다.
+이력서 Best Example 을 보고 썼지만 서류탈을 많이 해서 앞으로 더 보완해야 할 것 같다는 생각을 한다,,,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;기본 정보 (이름, 이메일, 전화번호, 깃헙 주소, 블로그 주소) ← 전화번호를 적지 않고 낸 경우엔 이메일로 전화번호를 물어보는 경우도 있었다! 전화번호 꼭 써주자,,,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;간단한 소개 ← 관심 기술, 자신 있는 스킬, 관심있는 업무, 관련 경험 등을 썼다&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;기술 스택 ← FE 파트에 지원해서 웹 개발 전반에서 갖고 있는 기술을 작성했다. (FE, BE, Infra 등)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Work Experience ← 인턴 업무&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Project ← 일이 아닌 동아리, 개인플젝 혹은 창업팀 등의 이력을 작성했다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other ← 현재 하고 있는, 혹은 했던 동아리 활동을 썼는데 따로 본인을 파악할 수 있겠다 싶은 기타 활동들 넣어주면 될 것 같다&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Buy flour and salt
-&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Mix together with water
-&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Bake&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;코딩 테스트 / 과제 테스트&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;프론트엔드로 지원을 하기도 했고 개인적으로 과제 전형에 더 자신이 있어 &lt;del&gt;사실 코테 준비를 아예 안 함 브론즈가 아니라 언랭이랄까 ^^..&lt;/del&gt; 코딩 테스트보다는 과제 테스트를 보는 곳에 지원했고 몇 군데 안 되지만 모두 통과했다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;스켈레톤 코드&lt;/strong&gt;를 주고 채워넣는 형식과 &lt;strong&gt;밑바닥부터 완성&lt;/strong&gt;하는 두 가지 방식이 있는데,
+스켈레톤 코드의 경우 시간 제한 4시간정도가 있어서 굉장히 빠르게 구현했어야 했다.&lt;/p&gt;
+&lt;p&gt;시간 부족으로 마지막 구현 사항인 api 통신 부분은 세부 구현은 하지 못 하고 껍데기만 만들어서 어떤 형식으로 코드를 짤 계획인지 보여주는 수준으로만 만들었다.
+이 방식을 통해 보는 가장 주요한 포인트는&lt;/p&gt;
+&lt;p&gt;“&lt;strong&gt;숙련도&lt;/strong&gt; (좋은 습관이 들어있는지)”, 그리고 “&lt;strong&gt;기존 코드 활용 능력&lt;/strong&gt; (코드 리딩 능력)”
+인 것 같다.&lt;/p&gt;
+&lt;p&gt;오랜만에 촉박한 시간을 가지고 집중력을 끌어내서 문제를 풀어서 그런지 재밌었다.
+또한 요구된 구현 사항을 만들 때 기존 코드를 수정하면 새롭게 만드는 것보다 더 낫다 싶은 게 보여서 그렇게 했는데 아마(?) 이쪽에서 점수를 얻었다고 생각한다,, &lt;del&gt;오만방자....&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;반면 일반적으로 과제전형 하면 생각나는 밑바닥부터 완성하는 방식의 경우 3일~1주일의 기간동안 주어진 요구사항에 맞춰 개발하면 된다.
+여기서 보는 주요 포인트는&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;재사용성, 확장성, 가독성 등 코드 퀄리티&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;테스트 코드, 스크립트 등 개발 외적인 부분&lt;/p&gt;
+&lt;p&gt;이라고 생각하는데, 이 방식의 과제 테스트를 준비하는 데 도움이 된 &lt;a href=&quot;https://medium.com/@gojbpark/%EA%B0%9C%EB%B0%9C-%EA%B3%BC%EC%A0%9C%EB%A5%BC-%EC%A4%80%EB%B9%84%ED%95%98%EB%8A%94-%ED%8C%81-10%EA%B0%80%EC%A7%80-372d00c3db8&quot;&gt;글&lt;/a&gt;을 첨부한다,,
+사실 이 방식도 숙련도를 볼 수 있겠지만 아무래도 시간이 조금 넉넉한 관계로 숙련도보다는
+why React? why 이 구조? 등 why ‘특정 기술&apos;? 에 대한 것, 프로젝트 구조에 대한 넓은 시야가 더 중요한 것 같다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;기술 면접&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;프론트엔드로 지원을 했기 때문에 FE 관련 질문을 주로 받았어서 FE 개발자를 목표로 준비하지 않는 분들은 큰 도움이 안 될 수 있다.&lt;/p&gt;
+&lt;p&gt;그래서 구글링을 통해 쉽게 알 수 있는 기술 질문들보다 면접관들과 티키타카하면서 풀어야 하는 어려운 기술 질문들에 대해 공유해보려 한다.&lt;/p&gt;
+&lt;p&gt;프론트엔드 기술과 관련해서 문제를 풀었지만 이 글을 통해 FE뿐만 아니라 백엔드나 데브옵스 등 다른 직무를 준비할 때 어떤 식으로 어렵게 기술 질문을 하고 실력을 파악하는지 유추하는 데 도움이 된다면 좋을 것 같다.&lt;/p&gt;
+&lt;p&gt;물론 본인은 &lt;del&gt;하꼬이기 때문에&lt;/del&gt; 아직 실력이 부족하기 때문에 그다지 어렵지 않다고 느낄 수 있다..&lt;/p&gt;
+&lt;p&gt;아무튼 티키타카 면접을 소개하기 전에 기술 면접에 대해 먼저 말해보려 한다.&lt;/p&gt;
+&lt;p&gt;기술 면접, 더 나아가 주니어로서 가장 중요한 건 &lt;strong&gt;논리적 문제 해결&lt;/strong&gt;이라고 생각했는데, 여러 면접을 거치면서 뼈를 때리는 질문을 통해 도대체 논리적 문제 해결이 뭔지 조금이나마 알게 됐다.&lt;/p&gt;
+&lt;p&gt;바로 기술적인 문제를 해결한 과정을 대답하고 나서 들었던&lt;/p&gt;
+  &lt;aside&gt;
+  💡  “그게 왜 문제라고 생각했나요?”
+  &lt;/aside&gt;
+&lt;p&gt;라는 피드백이었다.&lt;/p&gt;
+&lt;p&gt;지금까지는 기술 면접에서 자주 물어보는 질문 중 하나인 ‘어려웠던 문제 해결 과정 설명&apos; 의 답변을 할 때 &lt;strong&gt;문제 정의&lt;/strong&gt; 단계를 설명하지 않았던 것이다.&lt;/p&gt;
+&lt;p&gt;즉 &lt;strong&gt;논리적 문제 해결 프로세스&lt;/strong&gt; 안에 이미 아래와 같은 내용이 들어있던 거다..&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;능동적 문제 찾기&lt;/strong&gt; - 근거를 통해 &lt;strong&gt;문제라고 정의&lt;/strong&gt;하기 - 해결 (해결했다고 / 하지 못 했다고 판단한 근거 또한 필요)&lt;/p&gt;
+&lt;p&gt;아무튼간에 티키타카 면접질문 얘기를 해보자면!&lt;/p&gt;
+&lt;p&gt;어려웠다고 느낀 질문들 대부분 프로젝트나 업무에서 사용했던 기술과 관련해&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;code goes&lt;/code&gt; here in this line&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; goes here&lt;/li&gt;
+&lt;li&gt;어떤 동작 방식을 가지고 있는지 / 가지고 있을 것 같은지&lt;/li&gt;
+&lt;li&gt;왜 그렇게 구현했는지 / 왜 그렇게 구현했을지&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;token code-snippet code keyword&quot;&gt;`code goes`&lt;/span&gt; here in this line
-&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;token bold&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token content&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;**&lt;/span&gt;&lt;/span&gt; goes here&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Paragraph:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Code&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;!-- --&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Paragraph:
+&lt;p&gt;와 같은 질문을 통해 사고력을 확인하려고 했던 것 같다.&lt;/p&gt;
+&lt;p&gt;몇 가지 예를 들어보면&lt;/p&gt;
+&lt;p&gt;아래와 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;React 개발 시 list 를 map 함수 등을 통해 풀어서 list의 item들을 컴포넌트로 만드는데, 이 때 key값은 왜 필요한가?&lt;/p&gt;
+&lt;p&gt;React 의 Virtual DOM과 &lt;a href=&quot;https://reactjs.org/docs/reconciliation.html&quot;&gt;React의 렌더링 최적화 방법&lt;/a&gt;에 대해 꼬리 질문이 나오면서 렌더링, 상태 업데이트 등 React의 동작방식에 관해 티키타카했다.&lt;/p&gt;
+&lt;p&gt;여기에 더해 React에서 setState는 왜 비동기로 구현되었는지? 와 같은 질문도 나왔다.&lt;/p&gt;
+&lt;p&gt;당연하게도 따로 찾아보지 않았으면 알 수 없는 부분이었고, 이럴 때는 최대한 현재 가지고 있는 cs 배경지식, js 언어 지식 등 알고 있는 개발 관련 지식을 긁어모아서 유추해야 한다.&lt;/p&gt;
+&lt;p&gt;비동기와 동기의 차이점을 통해서 힌트를 얻을 수 있는데,&lt;/p&gt;
+&lt;p&gt;setState가 동기라면 첫번째 setState 이후 React가 리렌더링하는 과정이 다음 setState 이전에 실행되는 것이 보장된다. 나중에 call된 setState를 block하고 실행하는 거겠..죠?&lt;/p&gt;
+&lt;p&gt;setState가 비동기라면 setState를 짧은 시간 안에 여러 번의 요청을 했을 때 여러 setState가 blocking되지 않고 비동기적으로 처리되므로 리렌더링은 &lt;strong&gt;마지막 상태 업데이트 후에만&lt;/strong&gt; 하면 된다 (React가 이렇게 구현되어있다는 뜻). 동기가 아니므로 setState-리렌더-setState-리렌더링 ... 이라는 과정이 보장되지 않는 것이다.&lt;/p&gt;
+&lt;p&gt;위와 같은 아이디어가 생각이 안 난다면 비동기와 동기의 차이가 blocking이므로, 이걸로 힌트를 더 주실 수 있을까요? 이러면서 힌트받고 또 실마리 얻어가고.. 이렇게 하면 된다,,,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Redux에서 Reducer가 필요한 이유?&lt;/p&gt;
+&lt;p&gt;Redux는 &lt;a href=&quot;https://www.huskyhoochu.com/flux-architecture/&quot;&gt;Flux&lt;/a&gt; 패턴의 구현체인데 (완벽하게 Flux와 동일하게 구현한 것은 아니고 Redux만의 방식으로 단방향 데이터 흐름을 구현) 이 때 reducer는 Flux에서의 &lt;strong&gt;dispatcher+store&lt;/strong&gt; 역할을 한다.&lt;/p&gt;
+&lt;p&gt;그래서 이 질문 다음 꼬리 질문으로 Flux 패턴에 대해 설명해달라, Flux 패턴이 필요한 이유, 그럼 MVC의 문제는 뭐였냐 등 디자인 패턴에 대한 티키타카가 있었다.&lt;/p&gt;
+&lt;p&gt;마지막으로는 전역 상태 관리가 없다고 하고 상태관리를 한다면 controlled component VS uncontrolled component, 둘 중 뭘 더 선호하냐, 왜 선호하냐, 둘의 장단점은 무엇이냐,,, 본인은 개발할 때 어떤 식으로 prop 공유를 하냐 등등 &lt;strong&gt;상태관리&lt;/strong&gt;에 관한 질문이 엄청 많았다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;의존성 관련 - 고차 컴포넌트 vs Custom hook&lt;/p&gt;
+&lt;p&gt;custom hook은 의존성 관리 힘들지 않냐, 컴포넌트의 재사용성이 떨어지지 않겠냐 등 의존성과 재사용성에 관한 질문을 여러 면접을 통해 굉장히 많이 받았다.
+이건 사실 이력서에 재사용성, 확장성에 대한 관심과 custom hook을 통해 로직을 다루는 부분이 자신있다고 작성해서 그런 것 같다..&lt;/p&gt;
+&lt;p&gt;실제로 개발하면서 로직 재사용을 hoc로 했을 때와 custom hook으로 했을 때 느꼈던 장단점, 본인이 생각하는 의존성 처리에 대한 시각, 재사용성에 대한 시각을 말해주면 될 것 같다.
+정답은 없는 부분이니까 진짜로 관심있는 부분인지 확인하는 용도 및 지원자가 가지고 있는 개발(의존성 처리, 재사용성 높이기 등) 에 대한 관점을 볼 수 있을 것 같다.&lt;/p&gt;
+&lt;p&gt;본인은,, 여러 hoc를 거치거나 hoc에서 데이터도 처리하고 처리된 데이터를 prop으로 받는 경우 컴포넌트(아마 container 컴포넌트)가 어느 hoc들에 의존하고 있는지 파악하기 어렵고 반면 custom hook을 통해 로직을 재사용하면 컴포넌트가 가지고 있는 의존성에 대한 파악을 오히려 더 쉽게 할 수 있다..는 식으로 대답했다.&lt;/p&gt;
+&lt;p&gt;이 토픽은 &lt;strong&gt;추상화&lt;/strong&gt;랑도 연결이 돼서, 어느 정도로 추상화를 가져가는 것이 좋을지, 추상화에 대한 시각, 추상화 해본 경험, 어떤 성과가 있었는지 등 개발 전반적인 부분에 대한 질문으로까지 이어졌다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;컬쳐, 핏, 인성 면접&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;기술면접만큼이나 컬쳐면접이 어려웠었는데, 구글링해서 찾은 면접 질문들을 통해 도움을 받고 준비를 했으나 실상 면접을 들어가면 머리가 백지가 되는 것이었다..
+그래도 컬쳐 면접 덕분에 지난 이력과 생활 속에서의 나를 곱씹으면서 스스로에 대한 생각을 많이 할 수 있었다.&lt;/p&gt;
+&lt;p&gt;병특을 통해 경험한 컬쳐 면접은 구글링해서 나오는 스타트업 개발자 컬쳐 면접 질문들과 맥락은 같았다.
+맥락은 같았지만 질문은 달라서 준비해 놓은 답변을 하지 못 하고 어버버대기도 했다...&lt;/p&gt;
+&lt;p&gt;컬쳐 면접의 경우 본인 성향, 업무스타일, 회사에 관심 갖게된 이유, 가장 몰입하는 순간, 회사에 기대/우려하는 점과 그 이유, 개발자로서 궁극적인 목표, 인생 목표, 일을 하는 가장 큰 동기, 본인이 생각하는 워라밸이란, 열정을 갈아넣은 경험 등에 대해 솔직하게 얘기하면 된다!&lt;/p&gt;
+&lt;p&gt;사실 회사와 나 사이의 &lt;strong&gt;Fit&lt;/strong&gt;을 보는 것이므로 떨어진다고 해서 내가 회사 생활을 하지 못 할 사람일까 등의 부정적인 생각을 할 필요는 없다.&lt;/p&gt;
+&lt;p&gt;컬쳐 면접 관련해서는 많은 정보를 줄 수 없을 것 같다. 회사마다, 그리고 지원자마다 다른 질문과 답변이 오고갈테니 자기 자신에 대한 객관화를 잘 하고 솔직하게 얘기하면 좋을 것 같다는 생각...&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;마무리&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;아무튼.. 얼레벌레 작년 2학기 (2021) 부터 휴학하고 인턴, 팀플젝 등 하면서 병특 준비를 했는데 가고싶은 회사 중 한 군데에 입사하게 되었다...!&lt;/p&gt;
+&lt;p&gt;정말 많은 걸 경험하고 해결하면서 성장하면 좋겠다 하하 &lt;del&gt;소년 만화냐고 ㅋㅋ&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;음...네.. 항상 마무리가 어렵다.. 끗&lt;/p&gt;</content:encoded></item><item><title><![CDATA[인턴으로 스타트업 MVP 개발 후기]]></title><description><![CDATA[글 한 번 써보라고 하시기도 했고 개인적으로라도 인턴 생활을 되돌아볼 필요가 있어서 쓰게 된 프론트엔드 인턴 회고 아마 기술 얘기보다는 다른 얘기를 하지 않을까.. 일단 내 실력이 그지깽깽이잖아? 들어가보자고 인턴하면서 개발한 mvp…]]></description><link>https://github.com/codeKiuk/2021-12-04-intern/</link><guid isPermaLink="false">https://github.com/codeKiuk/2021-12-04-intern/</guid><pubDate>Sat, 04 Dec 2021 16:04:03 GMT</pubDate><content:encoded>&lt;p&gt;글 한 번 써보라고 하시기도 했고 개인적으로라도 인턴 생활을 되돌아볼 필요가 있어서 쓰게 된 프론트엔드 인턴 회고&lt;/p&gt;
+&lt;p&gt;아마 기술 얘기보다는 다른 얘기를 하지 않을까.. &lt;del&gt;일단 내 실력이 그지깽깽이잖아?&lt;/del&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;들어가보자고&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;인턴하면서 개발한 mvp는 프로덕트 개발 프로세스에서 큰 비중을 차지하는 QA 과정에서의 디자이너와 프론트엔드 개발자간 협업을 자동화하여 그동안 있어왔던 비효율을 딥러닝 및 컴퓨터 비전을 통해 없애는 것을 목표로 가지고 있다.&lt;/p&gt;
+&lt;p&gt;(&lt;a href=&quot;https://blog.toss.im/article/workflow-revolution&quot;&gt;https://blog.toss.im/article/workflow-revolution&lt;/a&gt; - &lt;strong&gt;토스는 그동안 있어왔던 디자이너와 개발자간 협업의 비효율을 어떻게 해결했나?&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;일단 10월 중순에 입사하면서 MVP 개발이 시작되었고 FE,BE 개발자분은 두 분이어서인지 인턴임에도 꽤 많은 부분에서 내가 작성한 코드가 사용되었다. &lt;em&gt;우와!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;플러스로.. 같이 mvp를 개발한 팀원분들은 이미 엑싯까지 경험하신 분들이라 일하면서 귓동냥으로 프로덕트 기획과 개발 등 스타트업 씬 전반에 대한 인사이트와 에티튜드를 가까이서 느낄 수 있었다. (사실 이게 인턴하면서 얻을 수 있는 최고의 경험이 아닐까..!)&lt;/p&gt;
+&lt;p&gt;아무튼 내 얘기는 관심없을 테니,, 제품 얘기로 들어가보자&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;이 제품이 왜 기획됐을까&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;그래서 네가 참여한 제품이 어떤 니즈때문에 나온건데?&lt;/p&gt;
+&lt;p&gt;아래 글 &lt;strong&gt;인트로&lt;/strong&gt;를 보면 디자이너와 개발자간 협업 비효율에 대한 얘기가 자세하니 이걸로 갈음한다.. (개발 리소스 낭비, 반복적인 디자인 작업, 소모적인 커뮤니케이션)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://engineering.linecorp.com/ko/blog/line-design-system/&quot;&gt;https://engineering.linecorp.com/ko/blog/line-design-system/&lt;/a&gt; - &lt;strong&gt;개발자와 디자이너의 협업을 위한 LINE 디자인 시스템, LDS 소개&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.notion.so/MVP-f5c829701fe64af9a017a51d81c65a28?pvs=21&quot;&gt;위&lt;/a&gt;에서 이미 첨부한 토스는 &lt;strong&gt;프레이머&lt;/strong&gt;를 통해, 라인은 &lt;strong&gt;디자인 시스템 구축&lt;/strong&gt;을 통해 디자이너-개발자 협업 문제를 해결했다.&lt;/p&gt;
+&lt;p&gt;반면에 우리는 디자이너가 만든 피그마 작업물과 개발자가 개발한 개발페이지를 &lt;strong&gt;element 단위로 비교하여 차이점을 분석&lt;/strong&gt;해서 제공해준다. 이를 통해 QA 과정에서 &lt;strong&gt;과잉 소통&lt;/strong&gt;(QA 내용을 슬랙, 이메일, 문서, ppt 등 다양한 채널을 통해 공유) 과 &lt;strong&gt;불필요한 문서작업&lt;/strong&gt;의 문제를 해결하고자 한 것 같다. QA에 더 집중한 거라고 보면 되지 않을까&lt;/p&gt;
+&lt;p&gt;자세한 기획 배경 문의는 대표님께 해보자.. &lt;del&gt;010-447...&lt;/del&gt; &lt;del&gt;근데 이 정도 설명이면 찰떡같이 알아듣지 않나&lt;/del&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;그럼&lt;/strong&gt; &lt;strong&gt;넌 뭐했는디&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;정신없이 1달 반을 달려서 스쿼시 머지만 했는데도 300커밋 넘게 머지한 걸 보고 일을 하긴 했구나싶었다..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Custom hook 성애자&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;아무래도 재사용과 확장성에 관심이 있다보니 입사하고 첫 비동기 관련 코드를 작성할 때도 재사용성에 대해 생각하지 않을 수 없었다.&lt;/p&gt;
+&lt;p&gt;그래서 saga 코드 작성 후 Custom Hook에 server state를 변경하는 dispatch 함수와 client state를 변경하는 dispatch 함수들을 추상화시켜서 모아놓은 후 PR을 날렸고, 옆자리 차기 CTO 주연님^.^과 custom hook에 대해 얘기를 나눌 수 있었다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 320px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d586de827412fd94f15fe6701b654036/72799/directory.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 208.22784810126583%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAqCAYAAACz+XvQAAAACXBIWXMAABYlAAAWJQFJUiTwAAAFtUlEQVR42pVWyY4bVRRtuj2U7XYNrsmuyS6XXZ663e4hnUBACJAYhIKyIqDAJmKRDdvsWCIBG8QOED/A5/BFB5376rmd7nakLJ7eq3L51j33nnNuHXTtGF0rQePYQcv00eg4aB73YHR7aMo9763WQZl8iFdf/YvN/Au4cYpitsFoeorJ4hzRaIa25b9dwF5vjI8uniOPF2hbPQTxGN5gJKsXpvKQ0XVfW28MaHRtHHS6qE0ewvCHaLSt7R+7vT46dgDTjdC2Ahw7ITp2KOd9mR+0OjZa2RqHL/5GffYYvj/A9OQBpssLjGcblKtLOeezNdLxEvFohvHsDEm+2BOwOhhBDsMKJCvLj2G6AzlzMTO5dvroSKZ9WQpJr9p1QHbUH6H+7jMY8RztYwddN4LlRXAHQ9gSXF0zqKptJgHV/RhOkMiLq4A2jHiBo29+Rb24RhgmmJ1eC1RCI1x2nTs7P56tZV+sH8q9wbCU51iOG8jkW7endtMTHpKPmos8H0szfNTaFhpte5sRn+VqVd0/YBCjP8XRl6/QHF3AtDwEyQT9dIJ4NEeYTARmViylEX6UC7XYHLc/RBDl8KORlIO1rAJOUPv0RzSyNfwwQbG4QDE/k4ej4QxZsRJI41J1ejg5EbjRsMQgmyIv11JXFZCQCdf00SbErotay8KR0UW9bcu51jJRb1vVNc+mnDVcVR73hofNZInD7/9AffIIYRgjm5wIvFF5WmW3EPgsQ5IvJSsSXlNul+QHkp2XonHxBM2wQM+PpG78E2vVT6cCjWcnTCUo67hXei3TRcsKYCQLtHqRdHXbOdPbug+z0PcJ7w3Ss9DMTnH4wz+oz96H5/UxWV4K18rVlRScPCzm57KTcywJm8Xf2O1dw9jJcAnDGcByB0IHJ0iFa+wel+VGsP0EtqdkSeVQIVTS6xmyhm6KxvpzGGEBKqdl+VJ0bzCUnaTmLmcnlBcRstbyHbeRLn/3O+rT96TLi7NHmJ8+EC6Opic3jjNdC9RivpFrBr7tjzc8tPuy62LzQd0QGgFLo//85qZQKeEYtU9eSnO6pis15CJF6Dj9bCryogRZN/7GelIM9wS0YUQzHD39CY38QqRXnlxJl9lN7uwkYXIFyVg6PSxWO+T2b0HWblGZZb2SG2FqWWkZ6lJQioqzzpaz26bQDw+f/YJGcQ3b9hDnCyT5XOTHnfLjTmNgUwZZKVLkTkWFSbGtqaINHfvxczSjObwgFjdhMEqOQSg1rWdfHKiUYKyxekkptWXQm5niD9GyA4FAeFwaHn/ntT4TonYbtTvb7ivppac4fPEX6rMP4Llh5YcbKb7s842y//kGeTUW+BulSOPlM8y2ylBJr5mfi/RsL5KakCKkByHKwOoP5R4HE6WYTVaKXmFW0UlJtRpSS9Q/fgljfAWjdYxG9W2j5wblxrcryEzgxoV2l4JstNG8eIJ3fv4PtaunCL0Qi827mIn0NlisrzFdXWKyPFfyK9XUI0Rla95dczD8DMboHIaboGPpjHaNQLmyNgh9vl96DOilqD/6WhTTMV35cqAtqfrF4tTceU/bFl+299uGXnj47W8y6IMglkFPQ2UnuSbVmXwjwafLS3nZrkL2So9eaHCSVUW+Kbga+hr+/pmyYw7N/BKm5SJMJ6IEZsMzacIhxXWfB95jX4XYVyM9EbchgWms5CM7O5ys0E8K0bRD2+reHZ+3DNZVBmsqiDXDFLfR0tLmquVH6LsGfM8IWMkIaJSP0esFGJXrbUOYVV6eigmk45UYhx76eXkmKtmdK9WQStA4+wzNIEfPj+VjnXApJ9aNZ7efya4HPb+/2XX9TXN3jKZLNeg7tvpk087ScbbOs+syzGoPZLrNCQ5f/CmDPvCj6oPzSmAWi41Ij2OAsiM/SXI9qG435kAa4vTRHF/C6CXoOiGcMJMhRFVQHfqT13TVNWW5jzb/A9emKUBrzmbjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;directory&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d586de827412fd94f15fe6701b654036/72799/directory.png&quot;
+        srcset=&quot;/static/d586de827412fd94f15fe6701b654036/c26ae/directory.png 158w,
+/static/d586de827412fd94f15fe6701b654036/6bdcf/directory.png 315w,
+/static/d586de827412fd94f15fe6701b654036/72799/directory.png 320w&quot;
+        sizes=&quot;(max-width: 320px) 100vw, 320px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;결과적으로 MVP 프로젝트 내에서 좀 사이즈가 있는 기능들 (프로젝트, 테스트 케이스, 테스트 세팅값, Canvas, 테스트 결과관련 체크리스트 등) 을&lt;/p&gt;
+&lt;p&gt;useTestCase.tsx, useProject, useQaTestCanvasNode 등의 custom hook을 통해 추상화하고 컴포넌트간 로직을 공유했다.&lt;/p&gt;
+&lt;p&gt;→ custom hook을 사용하면서 좋았던 것은 한 페이지에서 쓰이는 여러 기능들을 하나의 훅 안에 담을 수 있게 되어&lt;/p&gt;
+&lt;p&gt;협업하면서 코드가 꼬일 일이 적었고, 기획이 수정되거나 버그 픽스를 위해 다른 사람의 코드를 볼 때 custom hook을 먼저 보면서 어떻게 로직을 짰나 빠르게 확인이 가능했다는 점이었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;클라이언트단에서 &lt;del&gt;나름&lt;/del&gt; 대용량 데이터 핸들링&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;아무래도 Figma에서 import한 &lt;em&gt;디자인 작업물 이미지 정보&lt;/em&gt;, &lt;em&gt;개발페이지 스크린샷 이미지 정보,&lt;/em&gt; 각 이미지의 &lt;em&gt;DOM Node 정보&lt;/em&gt;와 더불어 두 이미지간 difference 체크 후 &lt;em&gt;node difference&lt;/em&gt; 관련 정보 등을 모두 클라이언트에서 들고 있어야 하고, &lt;del&gt;더 있어?&lt;/del&gt;
+들고 있는 노드 정보를 통해 Canvas에서 각 노드를 찾아야 하다보니 개발하다가 종종 redux dev tool이 꺼지는 일이 발생했다.
+&lt;del&gt;비행기 체험은 덤 위이이이이잉&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;서버에서 노드 정보를 그냥 array 로 보내주고 있었기 때문에 노드를 찾을 때 매번 array를 순회하는 게 불필요하다고 생각이 돼서 &lt;a href=&quot;https://redux.js.org/usage/structuring-reducers/normalizing-state-shape&quot;&gt;Redux Store Normalization&lt;/a&gt; &lt;em&gt;(공식문서가 정말 자세하니 저는 그냥 지나가겠읍니다.. 그냥 db 정규환데 이걸 이제 클라이언트단에서 하는..예..)&lt;/em&gt; 을 통해 node들을 node id를 기준으로 분리했고, 이를 통해 노드 각각을 검색하는 데 드는 시간을 줄일 수 있었다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;버그 픽스&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;제품을 사용할 때 디자인 페이지와 개발페이지를 불러온 이후 view result (detect difference) 버튼을 통해 에러 체크리스트를 통해 얼마나 두 페이지가 차이나는지 알 수 있는데, 이때 &lt;strong&gt;다른 페이지를 갔다가 다시 돌아오면 에러 체크리스트가 초기화되는 오류&lt;/strong&gt;가 있었다.&lt;/p&gt;
+&lt;p&gt;이 이슈의 경우 페이지를 옮겼다가 다시 돌아올 때 서버에 요청해서 받는 데이터중에 에러 체크리스트가 오지 않아서 생긴 이슈라고 처음엔 생각했다.
+더 고민해보니 서버 response에 문제가 있다고 생각되지는 않았고 (db 조회를 최소한으로 하는 게 좋다보니!) 이미 서버에서 받은 에러 체크리스트를 &lt;strong&gt;client state에서 저장하지 않고&lt;/strong&gt; pagination을 하는 게 문제라고 판단했다.&lt;/p&gt;
+&lt;p&gt;따라서 페이지를 옮길 때마다 saga의 select 함수를 통해 기존에 서버에서 response로 받은 에러 체크리스트를 계속 들고 있을 수 있도록 함으로써 해결했다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;사용자 경험&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;앞서 &lt;a href=&quot;https://www.notion.so/MVP-f5c829701fe64af9a017a51d81c65a28?pvs=21&quot;&gt;버그 픽스&lt;/a&gt;에서도 말했듯이 &lt;strong&gt;client state&lt;/strong&gt;와 &lt;strong&gt;server state&lt;/strong&gt;를 구분해서 생각하는 것이 사용자 경험을 높이는 데에도 도움이 되었다.&lt;/p&gt;
+&lt;p&gt;Detect Difference를 하기 전 setting 값을 수정할 때마다 서버에 api를 날리는 구조여서 client state 와 server state를 구분하지 않으면 유저가 setting 값을 변경할 때마다 서버 응답을 받아 체크박스 state가 바뀌게 되므로 사용자 경험에 악영향을 준다고 판단했다.&lt;/p&gt;
+&lt;p&gt;그래서 React 어플리케이션과 Redux store에서 사용하는 동기적인 client state와 비동기적인 server state를 나누어 관리하는 걸로 코드를 수정해서 사용자 경험을 향상시켰다.&lt;/p&gt;
+&lt;p&gt;잘은 모르지만 &lt;a href=&quot;https://react-query.tanstack.com&quot;&gt;react-query&lt;/a&gt;가 지향하는 바가 client state와 server state의 분리라는데 실제로 이런 경험을 개발하다가 만나다보니 언젠가는 사용해보고싶어졌다..&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[재사용 가능한 컴포넌트 만들기]]></title><description><![CDATA[들어가며 풀스택 CRUD 게시판을 하나 만들어보자 라는 생각으로 21.08.15에 시작한 동아리 | 소모임 게시판 서비스 Ginger…]]></description><link>https://github.com/codeKiuk/2021-09-01-reusable-component/</link><guid isPermaLink="false">https://github.com/codeKiuk/2021-09-01-reusable-component/</guid><pubDate>Wed, 01 Sep 2021 16:04:03 GMT</pubDate><content:encoded>&lt;h3&gt;들어가며&lt;/h3&gt;
+&lt;p&gt;풀스택 CRUD 게시판을 하나 만들어보자 라는 생각으로 21.08.15에 시작한 동아리 | 소모임 게시판 서비스 Ginger의 코드 &lt;a href=&quot;https://github.com/codeKiuk/Ginger&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;https://github.com/codeKiuk/Ginger&lt;/code&gt;&lt;/a&gt; 를 천천히 뜯어보며 리팩토링 하기로 마음먹었다.&lt;/p&gt;
+&lt;p&gt;내가 쓴 코드가 일단 돌아만 가는 &lt;del&gt;개노답&lt;/del&gt; 코드라는 걸 알고는 있었지만 뭘 어떻게 만들어야 확장성이 좋은 코드인지, 어떻게 짜는 것이 클-린한지 몰랐다.&lt;/p&gt;
+&lt;p&gt;그러다가 &lt;a href=&quot;https://jbee.io/etc/what-is-good-code/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;https://jbee.io/etc/what-is-good-code/&lt;/code&gt;&lt;/a&gt; 글을 보고 조금의 힌트를 얻어, 선배님이 생각하시는 좋은 코드의 기준인&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;의존성이 잘 드러나도록 추상화되어 있는가&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;확장성 있는 컴포넌트인가&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;에 맞춰 리팩토링을 진행하기로 했다.&lt;/p&gt;
+&lt;h3&gt;프로젝트 구조 파악&lt;/h3&gt;
+&lt;p&gt;의존성을 잘 드러내는 추상화 (한 파일이 하나의 목적을 갖도록 로직 분리) 를 이루기 위해서는&lt;/p&gt;
+&lt;p&gt;우선 프로젝트의 구조를 파악해 어떤 로직들이 존재하고,&lt;/p&gt;
+&lt;p&gt;이 로직들이 어느 파일에 어떻게 존재하는지 파악하는 것이 먼저다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 536px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c73f1db809f9a38a9a882b213c354544/2d920/redux.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 181.64556962025316%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAYAAACJ8xqgAAAACXBIWXMAABYlAAAWJQFJUiTwAAADnklEQVR42qVWyZLiVhDsT7BnhkVsQrvQjjYkgZCABrqx+zB98HZ0+Ozw/1/SUQW9YKIHMT5UBP2eOqOysirr3Xnr3xAu9kjqJ9SHX/HHX//g9z//xnz3DL/YIywPN8WdHG2h+iWMaAV7tkV2/4zy4Rf4xSP0cAVtWkENlo3jri2M0OqOMBA1DEYKbD9FsdyirB+wuv8ZY8XCl84QbUFsFHfd3hgUg5HKgGPZhOVGcPwEL3e3xBlgbyBDUiZIswp+mPN5uzu6HbDTG2MoqhD6ErpGCN2JUSw2SLMa3jS7CfQCUFBsaNYUthvDmARQdAcd4X9kKOgBTC/FZveEWVHDCzO0OsNj9t8FqLrQ7RBJVjFd10+hGV5j2peAmgvNCpEvNgjjOQPqE/8EKH0HoBkyZRKFepGEIdVHYwMdQby9bfqizkJQdtSLEyeCpFp8R99dq+VFYyuyyRkleYUoLZGX9xiKGj59FlgcisaUOQMjgGaHmEYFonSJeFZhUe0QJgv40wwTO/ymQG+AoxeVHciGB8sJ4QYzph2EORw/5d7UTb8h4DtR7DBHvTlwZsv1I+bLLbeRqjv43Op/s45nNewPFXYd0w65fkSTBBqNdQ66v0ll+gdJMRGlC85olq8gSiZ++NTFl/agUXOfi3KirHGGC84yzWtucvqt6u6ryh/15GUNZQuy7rEA5IssjJfAtAL2SmJB331E/xJwEkF3E5TV7lWYorzHcvWAan3A/qdnPt89fuVzUTbPsr2oIRXfC2ZMUTM9DEWdg+9P03RcFyrHfxW/ABxLBqtLgDRyLEirz6K8fEsZvcR1x56E0JwIcVqiKLcsSDZfc4OTIO/BPgYU3tVQMqEYHhw/fp0O05qyJxILUTLOKDcQJeadMstrtq98fsyQRKG1unv4ivX2iQWi86s1JFHIVKmxp/Gc9woJQSH0ZQZ4+1u6PinUa6RyPCtR1nvokwA/nialRXGqY3NzmEQw3ARZsWK1ifp8uWPwNK8QJvNXs70OSDTkCVTTZ8uy3JjVdYMUtpfw5Cia3XCWqUl7Itq6z7NMOyWZLZHxbtljVqw4SOHrfiiIGNGcWjEcN+YepAzJoUmk218OgojhWEdPdWBYAabJglcAUSaxjtYl3gY4kkz0neOWI2rV5sBTQnSzxRppUTP4tVX6lqFkoKd5UA0PQZTzhNheDFm1+EVG7dTkOfKOsoGeFSGICiyqPRsrPelanaNTdxo+Rf4F+vkBKWbD13kAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;redux 구조&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c73f1db809f9a38a9a882b213c354544/2d920/redux.png&quot;
+        srcset=&quot;/static/c73f1db809f9a38a9a882b213c354544/c26ae/redux.png 158w,
+/static/c73f1db809f9a38a9a882b213c354544/6bdcf/redux.png 315w,
+/static/c73f1db809f9a38a9a882b213c354544/2d920/redux.png 536w&quot;
+        sizes=&quot;(max-width: 536px) 100vw, 536px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;redux 구조&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 536px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fef6e1e3dbfe821eb084683c78371436/2d920/route.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.632911392405056%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABLklEQVR42p2Ry07CUABE+QdjgSKPktIXFHrb2wKXQlseRmhkCerOqFsT/39xDCxcGmBxdpOTmUzFX74g0i0y37PYHjm8f/P29UNWvjKa7RDz8ioqvXiLLTK8ZIPI9zwfPykPH4TzEjsqcOQSS+TYYXERFa3e4b7W4cFwqLox9kASqxVpsSNRS2bZE0OhuNNaVPUuWt34l0pN71Ctt2l2LPSej+WMCMQEtx/i9gWmNaDeMDjlLuFP2DJsdDfE8yXTdEUQTYknGf2hRKu1bhM23AjbCxirHDleIJM5hundJmyeGvaGWO5JWOCPEhxP0DU9anr71skRYZySZo/kqx1qvmYyW+IHY7Rq8wZhz8cPEkSkEFIRhNNzU9P2z5nrJp9edsT5jGJdohYbQqmuPuYXJFAlsbgm7pwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Route&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fef6e1e3dbfe821eb084683c78371436/2d920/route.png&quot;
+        srcset=&quot;/static/fef6e1e3dbfe821eb084683c78371436/c26ae/route.png 158w,
+/static/fef6e1e3dbfe821eb084683c78371436/6bdcf/route.png 315w,
+/static/fef6e1e3dbfe821eb084683c78371436/2d920/route.png 536w&quot;
+        sizes=&quot;(max-width: 536px) 100vw, 536px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Route&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 536px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8e95f0ee5f8a26b49e2fea25ed90deea/2d920/components.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 199.36708860759492%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAACXBIWXMAABYlAAAWJQFJUiTwAAAEs0lEQVR42p1WW2/iZhDNL+hKTQIYfMXGxvcbNgYD5rKETZRkpUiblbbqPmxfW6nt/5dONQNOkwIJ6cPI2OY7mplz5ozPkuozKPLVAxb3v+Lh++94/PEnHr7/gS8//sLX3/7GePOIaHqH+r+H4x7h4gvOrGQOCidbIpneYH7zFev7X7C6+4bq+hHL228Iig3MuEL938NRwczWOGu0u7gUNIhaHx3ZhBsWGE6vEA/nyMs1TDfDh4sOzpvKU9D/6dzzoGeC1MNZq62AQpK76BgONCuAHwxguzG8YADHSxBEOSw7hGF66Fk+ZKWHpiCjPktB9x1ZJ0AVFJLURbsXQLJCDPIp0nyKolwiLypkxRzz1Q2SbMLPLCdGo0WAGurzTUFBRzb2AdV+hEE2YcBsOMOwXGI4XiDNJgzYd2NcNEQInX/BDgPKOtq6B9kMEMZDOH4KPxrCCzIG98MMtpug1w925apvAFKGZgjFjjEulxhNP2JSXaFa3TAgZdloSbhsSi9KfSNDB6LuIowLROkYcTrmDHtWwCXW8V+wV3somQHyYsbNz4pqCxrmnNkxsIOAotRFxwqZ5SQdYTxboyhXSLKSgTuSwYdOBqSSBd2BYgUIiYwwhx/lCOICfTeBpPSOgr1KimrHmM7WqJY3GJVLlNUV4kHJ94rW3+lPPZUUF7Lpsw6ph8QukWJ7Kdpi930ZUg8F3WNh03QQYDFZsZjjtHyVkD1AulE0E6raQzIoMRwvMZqsECYjnF92cNkUXwU7AKhy0ynUrg3bS7aluglE2XihwWNa3C9ZNjh0w2YiqGzK0gsz/HzR5vm94GwlXDQ6e+QcIMWAIOoQzBB2kLGg02zKE1MHse3Su8EYuukxSJ3tYUBJh2D4sNwEUVKwjVEfnwO5wYC1qffcXX+l44BtyrCfwPYHmC0+sTlQ2eSHZA7FZInFx1t+vljfoZytMRjOGOywDlULHc2GZUeIkhGbBE2M6w/ghzn307RDzo5C1W2o3f5xHbatCLIdoygq5KM5ZzKdf0K1vMZ0vsGk2rBHnl+2mRSK5o6cPR3KqglZMXiP5MUcQTTcHhDkXUnba+uIQRwA3OqQtEdEUIn0rtFS/q8OdSZG61psW2RZVCY5DmmQ2NxqcPu7Qfct6cnSjspG7PncJ8qQyqbdovc8GJYPw/J445n9HTGmx1XVrTggmy5aZgjTTXhSytkVkzPe7ReSCcmGgrKn56SAWov7fmhF0MgPqzWLmYLWZi3gFyXzwpJfK1lHW+tD1B12bOodadByIn6/JeI5Kdpb9mVBU014forV5h6Ol+KnD5dsDHV2794p5NhaP0KalUwMzS9905i7aEvd03T45Ni9gEEJkEggtyb50LwSIVTFSTuFha1tJ4UcZjy9QjFeIkq3jk1E0PXkksmx6RNNVEw4QYYwKZAOp5ydIHZ5J7fJ2t616EUNQj+GZEWo5hu2K9Lgcn2LYbnAbHHNY0lyefPbpp5lWgFBVDAhtKxoUmgSOpL+dD1567HbyDrvZLIpypAcmnfJrofPHfo0lq0YipPypPCi37FLv4lxagHNNpX95gcnzbGgmPzxTiuUAOgwGQFpkD40SexdwznIdg34D2RCgAY/t4PAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;components&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8e95f0ee5f8a26b49e2fea25ed90deea/2d920/components.png&quot;
+        srcset=&quot;/static/8e95f0ee5f8a26b49e2fea25ed90deea/c26ae/components.png 158w,
+/static/8e95f0ee5f8a26b49e2fea25ed90deea/6bdcf/components.png 315w,
+/static/8e95f0ee5f8a26b49e2fea25ed90deea/2d920/components.png 536w&quot;
+        sizes=&quot;(max-width: 536px) 100vw, 536px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 536px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/20fd3728878c6c0f5c95852ee8cfc700/2d920/hoc.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 25.949367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA6ElEQVR42o3My26CUACEYR5CK2IqYK1yUzQCBxRQKDeNjalJk66b9P0f4TeycEG76OLLbGZGspIri7DE3R0Jiyunz2+C/IIjKpZRwyKqH/kfkhl/4IiC1e5EkF04f/20h3MvxwqKlum/4YT1H6pfpCdFpz/UGOkmsiUwHJ8kOxLGJdu0ZiMObMS+7fQGY/qySk9W27xvuyRZ0RgMVZ71GaPXBTNjyWoT4a4F9tJrOa7PZGoxmdpoEwP9xWSszblvux6HY91AsT3W3pY0a0gONXn5TpxWiO2BeF+RFWeSrEHscvwwbXfdwxvOFpv9F4ODVwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Higher Order Components&quot;
+        title=&quot;&quot;
+        src=&quot;/static/20fd3728878c6c0f5c95852ee8cfc700/2d920/hoc.png&quot;
+        srcset=&quot;/static/20fd3728878c6c0f5c95852ee8cfc700/c26ae/hoc.png 158w,
+/static/20fd3728878c6c0f5c95852ee8cfc700/6bdcf/hoc.png 315w,
+/static/20fd3728878c6c0f5c95852ee8cfc700/2d920/hoc.png 536w&quot;
+        sizes=&quot;(max-width: 536px) 100vw, 536px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Higher Order Components&lt;/p&gt;
+&lt;p&gt;Ginger 클라이언트 디렉토리는 어떤 기능을 하는지 (component인지, route page인지, redux인지) 에 따라 폴더 구조를 나눴다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;이 구조가 가질 수 있는 문제점은 플젝 규모가 커지면 코드가 정의된 곳과 이를 사용하는 곳이 멀어질 수 있다는 점.. &lt;del&gt;사실 이미 좀 멀어져 있다.&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;또한 MVC라든지 MVVM라든지 디자인 패턴에 대한 지식 없이 구성해서 좋은 의존성에 대한 고민을 많이 못 했다. ⇒ ( components/commons/Pagination.tsx 이라는 컴포넌트 안에 pagination view 로직이 들어있는 동시에 컨텐츠를 가져오는 상태 관련 로직이 동시에 존재하는 등 의존성 분리를 하지 못 했다. )&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;문제 찾아보기&lt;/h3&gt;
+&lt;p&gt;먼저 프로젝트 코드 전반적으로 redux와 thunk를 통해 전역 상태와 data fetch를 다루면서 재사용 가능한 컴포넌트를 많이 만들지 못 했다. (redux 덕분에 자식 컴포넌트에 props를 내려주는 일을 거의 안 하면서..)&lt;/p&gt;
+&lt;p&gt;그럼에도 불구하고 확장성을 생각한 포인트로는&lt;/p&gt;
+&lt;p&gt;→ withPaperContainer라는 고차컴포넌트를 통해 동아리 게시판 전체 글을 불러오거나 내가 쓴 글, 댓글을 불러오는 등 컨텐츠를 fetch하는 &lt;strong&gt;중복되는 로직&lt;/strong&gt;을 한 곳에서 처리했다.&lt;/p&gt;
+&lt;p&gt;그렇다면 이 외에 재사용 가능하도록 만들어볼 &lt;del&gt;구린&lt;/del&gt; 컴포넌트 혹은 view로직과 상태 로직이 같이 있는 복잡한 컴포넌트를 찾아보자.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sidebar&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sidebar에서 메뉴를 클릭하면 클릭한 메뉴가 어떤 메뉴인지 전역 store에 ContentSubject라는 enum 타입을 통해 저장한다. 이후 해당하는 컨텐츠(글or댓글 등)를 불러오는 함수를 dispatch한다.&lt;/p&gt;
+&lt;p&gt;그런데 Sidebar에서 메뉴 클릭 후 라우트를 mypage 혹은 home으로 옮겨오는데, 이 때 각 라우트를 구성하는 컴포넌트의 useEffect에서도 Sidebar에서와 마찬가지로 컨텐츠를 불러오는 함수를 dispatch한다.&lt;/p&gt;
+&lt;p&gt;따라서 개발 당시 만들었던 중복 로직을 삭제해줬다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 수정된 Sidebar.tsx&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 클릭한 메뉴에 따라 전역 store에 알려주는 함수에서 중복 로직 삭제&lt;/span&gt;
 
-    Code&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* * *
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onClickContentsMenu&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;title&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;동아리 / 학회&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setContentSubject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;CLUB_CONTENT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// 중복로직 삭제 =&gt; dispatch(getClubContents({ page: 1, perPage: perPage }));&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;스터디 / 소모임&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setContentSubject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;GROUP_CONTENT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// 중복로직 삭제 =&gt; dispatch(getGroupContents({ page: 1, perPage: perPage }));&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;내가 쓴 글&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setContentSubject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MY_CONTENT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// 중복로직 삭제 =&gt; dispatch(getMyContents({ userID: userID ,page: 1, perPage: perPage }));&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;내가 쓴 댓글&apos;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setContentSubject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MY_COMMENT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// 중복로직 삭제 =&gt; dispatch(getMyComments({ userID: userID ,page: 1, perPage: perPage }));&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pagination&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;글을 쓰게 된 계기인 &lt;del&gt;개구린&lt;/del&gt; 페이지네이션 컴포넌트.&lt;/p&gt;
+&lt;p&gt;먼저 바뀌기 전 코드를 보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Pagination.tsx&lt;/span&gt;
 
-***
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; Pagination&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;FC&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; contentsLoading &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useAppSelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;contents&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;loading&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; myCommentsLoading &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useAppSelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;myComments&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;loading&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; myContentsLoading &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useAppSelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;myContents&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;loading&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-*****
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; loading &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; contentsLoading &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; myCommentsLoading &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; myContentsLoading
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; contentSubject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useAppSelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;state&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; state&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;contentMenu&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;contentSubject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-- - -
+  &lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
 
----------------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Example&quot;&gt;an example&lt;/a&gt; link.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://example.com&quot;&gt;This link&lt;/a&gt; has no title attr.&lt;/p&gt;
-&lt;p&gt;This is &lt;a href=&quot;http://example.com&quot; title=&quot;Optional Title&quot;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is [an example](http://example.com &quot;Example&quot;) link.
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onPageClick&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;contentSubject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;CLUB_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClubContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; page&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; pageNum&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; perPage&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; perPage &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;GROUP_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getGroupContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; page&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; pageNum&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; perPage&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; perPage &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MY_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getMyContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; userID&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; userID&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; page&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; pageNum&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; perPage&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; perPage &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MY_COMMENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getMyComments&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; userID&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; userID&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; page&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; pageNum&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; perPage&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; perPage &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-[This link](http://example.com) has no title attr.
+    &lt;span class=&quot;token function&quot;&gt;setPage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-This is [an example] [id] reference-style link.
+  &lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;대충 봐도 재사용하기 어려운 컴포넌트라는 것을 알 수 있다.&lt;/p&gt;
+&lt;p&gt;-문제-&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;사이드바 메뉴 (즉 게시판 종류) 가 늘어났을 때 switch문 안에 case를 추가할 수 있겠으나 가독성이 떨어진다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;또한 Pagination만 하는 컴포넌트인데 컨텐츠를 가져오는 로직이 섞여있어서 유지보수하기 어려워보인다.&lt;/p&gt;
+&lt;p&gt;이는 Sidebar에서도 있었던 문제로, 컨텐츠를 가져오는 로직이 여러 군데 퍼져있다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;loading 또한 게시판 메뉴가 확장될 때마다 하드코딩해야한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;따라서 Pagination 컴포넌트의 부모 컴포넌트 역할을 하는 withPaperContainer의 코드를 수정함으로 위 문제를 해결했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Page를 옮겼을 때 새로 컨텐츠를 가져와야 하는 것은 꼭 필요한 로직이기 때문에 Pagination의 부모 컴포넌트에서 prop으로 getPapers 함수를 넘겨준다. (뒤에서 컨텐츠를 가져오는 상태 로직을 커스텀 훅으로 분리할 예정이다.)&lt;/li&gt;
+&lt;li&gt;로딩 또한 페이지네이션 컴포넌트가 아닌 부모 컴포넌트에서 처리해준다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// withPaperContainer.tsx&lt;/span&gt;
 
-[id]: http://example.com &quot;Optional Title&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;*single asterisks*
+&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; getPapers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;
 
-_single underscores_
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
 
-**double asterisks**
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;renderPapers&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 
-__double underscores__&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This paragraph has some &lt;code class=&quot;language-text&quot;&gt;code&lt;/code&gt; in it.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This paragraph has some `code` in it.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://via.placeholder.com/200x50&quot; alt=&quot;Alt Text&quot; title=&quot;Image Title&quot;&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;![Alt Text](https://via.placeholder.com/200x50 &quot;Image Title&quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+            &lt;span class=&quot;token keyword&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;contentSubject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+                &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;CLUB_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setTotalDocs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;contentsCount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;getPapers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; getClubContents&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;renderContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;clubContents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+								&lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;GROUP_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setTotalDocs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;contentsCount&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                    &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;getPapers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; getGroupContents&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;renderContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;groupContents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+										&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;loading &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Loading&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;loading &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;renderPapers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;br&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;loading &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Pagination &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;getPapers&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;getPapers&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;prop으로 받은 getPapers 함수를 통해 switch문을 삭제했다.&lt;/p&gt;
+&lt;p&gt;한결 깔끔해진 것 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Pagination.tsx&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onPageClick&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getPapers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; userID&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; userID&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; page&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; pageNum&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; perPage&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; perPage &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;setPage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;그런데 위에서 살펴봤듯이 view 로직과 data fetch 로직이 같이 있는 것이 비효율적이라는 생각을 했다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;그래서 data fetch 로직을 수행하는 custom hook을 만들어서 컴포넌트들이 view 로직만 처리하도록 만들어보자.&lt;/p&gt;
+&lt;h3&gt;Custom Hook으로 의존성 분리하기&lt;/h3&gt;
+&lt;p&gt;그렇다면 view단 컴포넌트들이 사용하는 상태 관련 로직들이 뭐가 있는지 찾아보자.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;로딩 상태 (현재 fetch 중이어서 로딩 상태인지)&lt;/li&gt;
+&lt;li&gt;선택한 글에 따라 해당 글 상세 정보 가져오기 (댓글, 해당 글 내용, 글 작성자 등)&lt;/li&gt;
+&lt;li&gt;현재 어느 게시판인지에 따라 data fetch&lt;/li&gt;
+&lt;li&gt;pagination 용 정보 (현재 page, total pages)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;글이 길어져, 4에 해당하는 로직을 custom hook으로 추출해서 어떻게 의존성을 분리했는지만 살펴보자.&lt;/p&gt;
+&lt;p&gt;리팩토링 이전에는 위에서 살펴봤듯이 Pagination 컴포넌트에는 pagination view를 렌더링하는 로직과 더불어 페이지 클릭 시 (혹은 next, before 버튼 클릭 시) 해당 페이지에 맞는 게시글들을 불러오는 상태 로직이 같이 존재했었다.&lt;/p&gt;
+&lt;p&gt;따라서 view 로직만 남겨두어 가독성을 올려보자.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;pagination view를 위한 상태 (전체 페이지 수, 현재 페이지, 한 페이지 당 몇 row 등) 를 usePagination라는 커스텀 훅에서 다룬다.&lt;/li&gt;
+&lt;li&gt;게시글 fetch관련 상태 로직을 useFetchPage 라는 커스텀 훅에서 다룬다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이렇게 하면 Pagination 컴포넌트에서 상태 로직을 다루지 않고 위 두 custom hook을 구독함으로써 페이지네이션 기능을 구현할 수 있다.&lt;/p&gt;
+&lt;p&gt;간략한 코드를 보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// usePagination.ts&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;usePagination&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; getPapers &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useFetchPage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;page&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setPage&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;perPage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setPerPage&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; totalPages &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ceil&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;totalDocs &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; perPage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;pageList&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setPageList&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;token function&quot;&gt;settingPageList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;totalPages&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;page&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onPageClick&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;setPage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getPapers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onBefore&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;onNext&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; page&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; perPage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pageList&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; onPageClick &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;useFetchPage 커스텀 훅으로부터 페이지 클릭 시 해당 페이지의 게시글을 렌더링하는 함수를 받아서 사용한다.&lt;/p&gt;
+&lt;p&gt;이렇게 하면 상태 관련 로직을 모두 커스텀 훅에서 처리할 수 있다.&lt;/p&gt;
+&lt;p&gt;아래는 &lt;del&gt;이제야 좀&lt;/del&gt; 단순해진 Pagination 컴포넌트의 모습이다.&lt;/p&gt;
+&lt;p&gt;renderPageList로 view 로직만 처리하고 있어 가독성이 훨씬 좋아졌다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Pagination&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; loading &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useBoardLoading&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; page&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; pageList&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; onPageClick &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;usePagination&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;renderPageList&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; pageList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; page&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Button&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;primary&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;variant&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;outlined&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;onPageClick&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                        &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Button&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Button&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;onPageClick&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                        &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;pageNum&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;
+                    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Button&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위에서 withPaperContainer 라는 부모 컴포넌트를 리팩토링해서 재사용성을 높이고자 했는데, custom hook을 통해 해결하면서 부모 컴포넌트의 구조가 더 간결해졌다.&lt;/p&gt;
+&lt;p&gt;Pagination 컴포넌트에게 컨텐츠를 불러오는 함수를 내려줄 필요가 없어졌기 때문에 부모 컴포넌트 또한 원래 존재목적대로 렌더링 로직만 남아있게 됐다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;tsx&quot;&gt;&lt;pre class=&quot;language-tsx&quot;&gt;&lt;code class=&quot;language-tsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// withPaperContainer.tsx&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;withPaperContainer&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+	&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;PaperContainer&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+					&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+					&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+					&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;renderPapers&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;contentSubject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+                &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;CLUB_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;renderContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;clubContents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+                &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;GROUP_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;renderContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;groupContents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+                &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MY_CONTENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;renderContents&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myContents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+                &lt;span class=&quot;token keyword&quot;&gt;case&lt;/span&gt; ContentSubject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MY_COMMENT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;renderMyComments&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;myComments&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+                &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; PaperContainer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;리팩토링 이후&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3f896d9ecbbe541036d8088981544bf8/e3815/before.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.26582278481012%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABs0lEQVR42n2Sy47TQBBF8wmQhd32JHbbbTt+JIztzMyGHTskkOAHyAOkkLAIC5BY5CNmFBySDSPmRw/qFg6JeCyuunVLdbrqqjuB18f3fTzPM2crz/cJPQ/puTyOejwKXfqBj7BtLMv6pzqhUoRh+FdFSpEMEsajlGdlQZIOiKOI6D/qBEFAKyml0ann+ZKnseJVlhD8qh/l95HSP/POgCqKzGQtVJ9xHFPVY8qyQil18qBEJU9QKjb3lnEE6txGRUFVluR5bprN6kqRxRHDIqUohiSxBoQGktXPyfOh6f0DqNdRSURZlmRZZmCtHypJkQ2oqtrU2umToEccSuTJlp3T/PI05Wo8pq5rRsMhgywjH5UUo0vKmxuur65NLcu1f0maFygVnmV+lqH+OoGK6XkBti0QjotwewjnAiEusCxhfFs4OG4PyxY4jvt7mxao87Jtm+l0wqfPX3gzXTKbr5jNlsznK6az90xmC+bvPjDV3tsVk8mCxfIjL16+xnGEYRyB+v90u102mw3399+5u73l227Hbrdjv9/TNA1N85XD4WDu2ttutzw8/GC9XptezdDAn86INJ0EmamhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;before&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3f896d9ecbbe541036d8088981544bf8/f058b/before.png&quot;
+        srcset=&quot;/static/3f896d9ecbbe541036d8088981544bf8/c26ae/before.png 158w,
+/static/3f896d9ecbbe541036d8088981544bf8/6bdcf/before.png 315w,
+/static/3f896d9ecbbe541036d8088981544bf8/f058b/before.png 630w,
+/static/3f896d9ecbbe541036d8088981544bf8/40601/before.png 945w,
+/static/3f896d9ecbbe541036d8088981544bf8/78612/before.png 1260w,
+/static/3f896d9ecbbe541036d8088981544bf8/e3815/before.png 2730w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5fe30e30c00be345f33861e16728b820/e3815/after.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.26582278481012%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABsklEQVR42nWQy24TMRSG8wgJi7aTudhje8aTmQYySYpABakgsWDRXFCgCzYg8QoVr5BHKCJtLsAGVHjED41D0kali0+2ftvf8Tm1OAqJhCCKIsTOKlAiQqoDHqiARuwTxIKD/X329vbupaa0Ril1h1gpEqNo5SkPS8vxU0OaWRKTYIy5l1ocx2yQUjpuZ2EkeFkGvDn2iKVAypt7UkZIl8ktO0JtjPvdViol2iScPCt5/qSD0manoE4KtDbE8U22FQopKfKcw6IgTVP0v1FUa5qkWGt38kqSla9ptQ6RQtwVVpUTa+j1e7Tbbfdwc2aM5FE74+joMUVROFnVeqojbLLe/1fYyiy9bpdOp+MepqnFtgqyPKfd7dLv9SnL0v3WZjnWZmijd2a+FVZthGGIMglSKfymRxAGhFISCEkQSZpNz+H7TSIZ0/R9d289glvCqj3P8xiPR3z4+InT4RnDUcU7x2D4lsFwwmi8yc44HUyYTN5z8uKVK7CR1tYzMtTrdabTKdfXv7n4MmM+X3E1X7FcfufyasnscsFy9cPtF4tvfJ3N+fnrD+fnn2k0Gs5RCf8CFIMzsYXe8YwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;after&quot;
+        title=&quot;&quot;
+        src=&quot;/static/5fe30e30c00be345f33861e16728b820/f058b/after.png&quot;
+        srcset=&quot;/static/5fe30e30c00be345f33861e16728b820/c26ae/after.png 158w,
+/static/5fe30e30c00be345f33861e16728b820/6bdcf/after.png 315w,
+/static/5fe30e30c00be345f33861e16728b820/f058b/after.png 630w,
+/static/5fe30e30c00be345f33861e16728b820/40601/after.png 945w,
+/static/5fe30e30c00be345f33861e16728b820/78612/after.png 1260w,
+/static/5fe30e30c00be345f33861e16728b820/e3815/after.png 2730w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;성능 개선을 목표로 리팩토링을 시작한 것은 아니었으나.. 성능 개선에 도움이 된 것 같다.&lt;/p&gt;
+&lt;p&gt;다음 글은 사이트 성능 개선을 위한 리팩토링을 해보고 써보자,,,&lt;/p&gt;</content:encoded></item></channel></rss>
