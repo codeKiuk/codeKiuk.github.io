@@ -141,7 +141,7 @@ textBox.addEventListener('input', (inputEvent) => {
 
 위 Optimize Input Delay에서 썼던 코드보다 더 큰 장점은, `requestAnimationFrame`을 통해 UI update와는 무관한 코드가 next frame을 블락하지 않도록 하면서, 모든 브라우저에서 동작한다는 거라네요
 
-![Untitled](Untitled%205.png)
+![yield_task](yield_task.png)
 
 ### 레이아웃 Thrashing 줄이기
 
