@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Juvantia : (약리학) 보조약 - 거창한 건 아니고, 블로그로 기억을 보조해보자 하는 의미
-개발 관련 글 이외 일상 얘기도 올립니다.]]></description><link>https://github.com/codeKiuk</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Mar 2024 14:25:09 GMT</lastBuildDate><item><title><![CDATA[2024.3에 Web Vital이 될 INP]]></title><description><![CDATA[INP https://web.dev/articles/inp 위 아티클을 보면 INP란 무엇인지 디테일하게 알 수 있습니다. 하지만 바쁜 우리들을 위해 간단하게 정리된 걸 먼저 보고 읽으면 좋을 것 같조?? INP란 Overview…]]></description><link>https://github.com/codeKiuk/2024-01-09/</link><guid isPermaLink="false">https://github.com/codeKiuk/2024-01-09/</guid><pubDate>Tue, 09 Jan 2024 16:04:03 GMT</pubDate><content:encoded>&lt;h1&gt;INP&lt;/h1&gt;
+개발 관련 글 이외 일상 얘기도 올립니다.]]></description><link>https://github.com/codeKiuk</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Mar 2024 14:30:16 GMT</lastBuildDate><item><title><![CDATA[2024.3에 Web Vital이 될 INP]]></title><description><![CDATA[INP https://web.dev/articles/inp 위 아티클을 보면 INP란 무엇인지 디테일하게 알 수 있습니다. 하지만 바쁜 우리들을 위해 간단하게 정리된 걸 먼저 보고 읽으면 좋을 것 같조?? INP란 Overview…]]></description><link>https://github.com/codeKiuk/2024-01-09/</link><guid isPermaLink="false">https://github.com/codeKiuk/2024-01-09/</guid><pubDate>Tue, 09 Jan 2024 16:04:03 GMT</pubDate><content:encoded>&lt;h1&gt;INP&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://web.dev/articles/inp&quot;&gt;https://web.dev/articles/inp&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -243,7 +243,39 @@ you make another interaction with the page before the initial interaction has ha
 &lt;/blockquote&gt;
 &lt;p&gt;다만 여기서는 &lt;code class=&quot;language-text&quot;&gt;requestAnimationFrame&lt;/code&gt;을 사용해서, visual feedback을 블락하지 않는 것에 더 초점을 두었네요!&lt;/p&gt;
 &lt;p&gt;위 Optimize Input Delay에서 썼던 코드보다 더 큰 장점은, &lt;code class=&quot;language-text&quot;&gt;requestAnimationFrame&lt;/code&gt;을 통해 UI update와는 무관한 코드가 next frame을 블락하지 않도록 하면서, 모든 브라우저에서 동작한다는 거라네요&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;Untitled%205.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/826379d56450faddd18daeb38fa49dcd/94cea/yield_task.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABwUlEQVR42o2SC2+bMBSF8///1iZt1dZW0yLUVnmQpIYQXsY8bWO+yaRdk66V9kkXkDHnHs71ggumaZrL0zQNRVFQVRVlUSDLEjeOTM6d62LvJQt/cc5hjEFrg7WGcbTUqiLLTuR5TpZnFKpCO4cF7DjO+4dhwGgzf38l6ImiiLIs/zo9P7y8bDo4xLATsDkwtd28XMmKZbBEa/0m2LYtaZqilKIfNJ0SyPgHMr5Fxneo+BZ1uEGuv6A2X5lON9j8gfVKsNzeET5vrn/ZWjtb95WmGUqe6JWYhetyTyIeSKJHiixk6BKqMiQRKyJxIq9TzGj+zfAV9xL2e/zSZQpuuh7kp4Ie77htG/quw8fh71eMFoxh8uUNfDRl38UYPVdd10RCkByPxFHE8Xic49DDgO07EAKeHmG18lN5s/7eYZqeqGvFR0xuYrfbkRflWwafsPDdvSspJW3bM2qJrreYZo9t91R5RVKkBOt7iiTAtHsGFTLUO3S9YRpfTZybLPq+nw+vz0vKijILScLviPU3MvGT5+2B++AXUb5lqJ6osyVtHtBkAV3+m8kW14KX0/Ki8zHSjq63aOtwbkQPGmss/8MfDlmixO0Vd/UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;yield_task&quot;
+        title=&quot;&quot;
+        src=&quot;/static/826379d56450faddd18daeb38fa49dcd/f058b/yield_task.png&quot;
+        srcset=&quot;/static/826379d56450faddd18daeb38fa49dcd/c26ae/yield_task.png 158w,
+/static/826379d56450faddd18daeb38fa49dcd/6bdcf/yield_task.png 315w,
+/static/826379d56450faddd18daeb38fa49dcd/f058b/yield_task.png 630w,
+/static/826379d56450faddd18daeb38fa49dcd/40601/yield_task.png 945w,
+/static/826379d56450faddd18daeb38fa49dcd/78612/yield_task.png 1260w,
+/static/826379d56450faddd18daeb38fa49dcd/94cea/yield_task.png 1940w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;레이아웃 Thrashing 줄이기&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing&quot;&gt;https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing&lt;/a&gt;&lt;/p&gt;

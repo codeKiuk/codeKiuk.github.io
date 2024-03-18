@@ -247,7 +247,39 @@ you make another interaction with the page before the initial interaction has ha
 </blockquote>
 <p>다만 여기서는 <code class="language-text">requestAnimationFrame</code>을 사용해서, visual feedback을 블락하지 않는 것에 더 초점을 두었네요!</p>
 <p>위 Optimize Input Delay에서 썼던 코드보다 더 큰 장점은, <code class="language-text">requestAnimationFrame</code>을 통해 UI update와는 무관한 코드가 next frame을 블락하지 않도록 하면서, 모든 브라우저에서 동작한다는 거라네요</p>
-<p><img src="Untitled%205.png" alt="Untitled"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/826379d56450faddd18daeb38fa49dcd/94cea/yield_task.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABwUlEQVR42o2SC2+bMBSF8///1iZt1dZW0yLUVnmQpIYQXsY8bWO+yaRdk66V9kkXkDHnHs71ggumaZrL0zQNRVFQVRVlUSDLEjeOTM6d62LvJQt/cc5hjEFrg7WGcbTUqiLLTuR5TpZnFKpCO4cF7DjO+4dhwGgzf38l6ImiiLIs/zo9P7y8bDo4xLATsDkwtd28XMmKZbBEa/0m2LYtaZqilKIfNJ0SyPgHMr5Fxneo+BZ1uEGuv6A2X5lON9j8gfVKsNzeET5vrn/ZWjtb95WmGUqe6JWYhetyTyIeSKJHiixk6BKqMiQRKyJxIq9TzGj+zfAV9xL2e/zSZQpuuh7kp4Ie77htG/quw8fh71eMFoxh8uUNfDRl38UYPVdd10RCkByPxFHE8Xic49DDgO07EAKeHmG18lN5s/7eYZqeqGvFR0xuYrfbkRflWwafsPDdvSspJW3bM2qJrreYZo9t91R5RVKkBOt7iiTAtHsGFTLUO3S9YRpfTZybLPq+nw+vz0vKijILScLviPU3MvGT5+2B++AXUb5lqJ6osyVtHtBkAV3+m8kW14KX0/Ki8zHSjq63aOtwbkQPGmss/8MfDlmixO0Vd/UAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="yield_task"
+        title=""
+        src="/static/826379d56450faddd18daeb38fa49dcd/f058b/yield_task.png"
+        srcset="/static/826379d56450faddd18daeb38fa49dcd/c26ae/yield_task.png 158w,
+/static/826379d56450faddd18daeb38fa49dcd/6bdcf/yield_task.png 315w,
+/static/826379d56450faddd18daeb38fa49dcd/f058b/yield_task.png 630w,
+/static/826379d56450faddd18daeb38fa49dcd/40601/yield_task.png 945w,
+/static/826379d56450faddd18daeb38fa49dcd/78612/yield_task.png 1260w,
+/static/826379d56450faddd18daeb38fa49dcd/94cea/yield_task.png 1940w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
 <h3>레이아웃 Thrashing 줄이기</h3>
 <blockquote>
 <p><a href="https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing">https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing</a></p>
