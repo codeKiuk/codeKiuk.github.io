@@ -1,5 +1,383 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Juvantia : (약리학) 보조약 - 거창한 건 아니고, 블로그로 기억을 보조해보자 하는 의미
-개발 관련 글 이외 일상 얘기도 올립니다.]]></description><link>https://github.com/codeKiuk</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Aug 2023 14:04:12 GMT</lastBuildDate><item><title><![CDATA[URL SearchParams 와 react-query의 편리한 data fetching orchestration]]></title><description><![CDATA[react-query로 client state와 server state의 분리 를 통한 source of truth를 실현한 Tanner Linsely가 만든 다른 오픈소스 프로젝트인 tanstack-router를 우연히 접했었는데,
+개발 관련 글 이외 일상 얘기도 올립니다.]]></description><link>https://github.com/codeKiuk</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Mar 2024 14:25:09 GMT</lastBuildDate><item><title><![CDATA[2024.3에 Web Vital이 될 INP]]></title><description><![CDATA[INP https://web.dev/articles/inp 위 아티클을 보면 INP란 무엇인지 디테일하게 알 수 있습니다. 하지만 바쁜 우리들을 위해 간단하게 정리된 걸 먼저 보고 읽으면 좋을 것 같조?? INP란 Overview…]]></description><link>https://github.com/codeKiuk/2024-01-09/</link><guid isPermaLink="false">https://github.com/codeKiuk/2024-01-09/</guid><pubDate>Tue, 09 Jan 2024 16:04:03 GMT</pubDate><content:encoded>&lt;h1&gt;INP&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.dev/articles/inp&quot;&gt;https://web.dev/articles/inp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;위 아티클을 보면 INP란 무엇인지 디테일하게 알 수 있습니다.&lt;/p&gt;
+&lt;p&gt;하지만 바쁜 우리들을 위해 간단하게 정리된 걸 먼저 보고 읽으면 좋을 것 같조??&lt;/p&gt;
+&lt;h2&gt;INP란&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Overview&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;사용자의 페이지 방문 기간동안 발생하는 모든 클릭, 탭, 키보드 등 &lt;strong&gt;상호작용&lt;/strong&gt;의 latency를 관찰
+→ 페이지의 전반적인 반응성을 평가하는 지표.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;INP를 측정할 때 관찰하는 상호작용(user interaction)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Clicking&lt;/em&gt;&lt;/strong&gt; with a mouse.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Tapping&lt;/em&gt;&lt;/strong&gt; on a device with a touchscreen.&lt;/li&gt;
+&lt;li&gt;Pressing a key on either a physical or onscreen &lt;strong&gt;&lt;em&gt;Keyboard&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Why INP?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Chrome usage data shows that 90% of a user&apos;s time on a page is spent after it loads, Thus, careful measurement of responsiveness throughout the page lifecycle is important.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;유저가 페이지에서 사용한 시간 중 90% 는 페이지가 로드된 이후.
+페이지 라이프사이클동안의 반응성이 중요하기 때문에 INP를 도입하기로 한 것&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;INP vs FID&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c512e2a37f1394dcaf2de9a10afc6388/e8950/inp_vs_fid.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVR42pWMS2sTURiGZ6ddaRNQEgtNKgitiO3/cuXWPyFp0WAi0osbBXVRrfWSlroSaeIlbSYzJyY1BhrMpLnMmMuZM4/MTIJu/eDhfd9zvu/V6rUq34WBfnzEh/09DF3HKBsIw0QYAmGKUP1simC3VhFURQWjdEz+8CPFr1/4+eOEjUwazVUerVaLlmWRz3/G6VuMBxZ4DuCAsvGwJ9mm07b5dWZx5rRRSlE5Edh2H3/e7rxEq9VqmIaBECZ6uUK99J5G4SHN0jNOi5tUP2VpFjdp6s85PdqisF/mxcEu2/mnDJwhcigZj8dBYW73FZpvXNfFU4per4fj/MZVIF2F4wzodPsMRxIpVYBSktFgSLfTpWHV6Tht5CgsfLezHRZ6nsf/jlSSg0qOb40CTM5zb16jPX6UZT1zn41seqJTH+a/f+lQJzxYu0t2NUVmNUX2XoonW+vcuX0Lbf7iOXwSE/71AbPnSU6JzASamProDMlImH38W215IYbPzUSMlYV44JeTMVauxrkxf4nFeIQln7koi1ciLE3xc3w2ePP1+lyUa5cv8AdVZt7CWomh5wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;inp_vs_fid&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c512e2a37f1394dcaf2de9a10afc6388/f058b/inp_vs_fid.png&quot;
+        srcset=&quot;/static/c512e2a37f1394dcaf2de9a10afc6388/c26ae/inp_vs_fid.png 158w,
+/static/c512e2a37f1394dcaf2de9a10afc6388/6bdcf/inp_vs_fid.png 315w,
+/static/c512e2a37f1394dcaf2de9a10afc6388/f058b/inp_vs_fid.png 630w,
+/static/c512e2a37f1394dcaf2de9a10afc6388/40601/inp_vs_fid.png 945w,
+/static/c512e2a37f1394dcaf2de9a10afc6388/78612/inp_vs_fid.png 1260w,
+/static/c512e2a37f1394dcaf2de9a10afc6388/e8950/inp_vs_fid.png 2000w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;FID&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;first interaction의 Input delay가 작으면, 좋은 first impression을 가졌다! 라는 것&lt;/li&gt;
+&lt;li&gt;main thread의 long task에 의해 first input delay 가 결정된다.&lt;/li&gt;
+&lt;li&gt;input 에 의해 next frame이 그려지는 delay를 측정하지 않는다.&lt;/li&gt;
+&lt;li&gt;input에 의해 실행된 event handler의 시간을 측정하지 않는다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;INP가 측정하는 것&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;the intent of INP is not to measure all the eventual effects of the interaction (such as network fetches and UI updates from other asynchronous operations), but the time in which the next paint is being blocked.
+→ &amp;#x3C;&lt;/em&gt; 유저의 행동 이후 시각적 피드백이 얼마동안 block되느냐만 보면된다! &lt;em&gt;&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ensure the time from when a user initiates an interaction until the next frame is painted&lt;/p&gt;
+&lt;p&gt;→ &amp;#x3C; 얼마나 빠르게 유저의 interaction에 반응하여 next frame을 그려주냐 &gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;INP 최적화하기&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;어쨌든 중요한 건 어떻게 INP를 개선하냐!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Interaction 쪼개보기&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Input Delay&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;user initiates an interaction ↔ ends when the event callbacks begin&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/21c5b4167b7f103b9dcedaecd2e78b56/77672/input_delay.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.139240506329116%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEElEQVR42oVQSU7DQBD0nyMeAeIW5RJxCg8AzvEXwtmXWLaMFxzv8r4VqpbGzAXSUs10z1JV3QYAOI4D0zTR9z1LrOsKFXpeFAXKstzOFfQwuFRliYfdDp+XC6qqgud5+PI8+L6PcRzlYV3XeH58wmG/F+IgCOC6LmzbllwJGUrh4+0d5vks+TAMmKZJoO7p/uV4xOvpJLW6J+Z5xrIsvw5Z6J/10NsiqRrLX7ERqtb+Czqh8F1COuBcsixDnufb8JmrnUjT9K6wMc+LKHNuXdeJAxLa1yssy0IURXLGVknGbnTwrwJrgw+bphG0bStkcRwjDEMEYYjoO0KaZkiSRBxyJ263RDpqW/5tUdeNiP4A5M9noo11d50AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;input_delay&quot;
+        title=&quot;&quot;
+        src=&quot;/static/21c5b4167b7f103b9dcedaecd2e78b56/f058b/input_delay.png&quot;
+        srcset=&quot;/static/21c5b4167b7f103b9dcedaecd2e78b56/c26ae/input_delay.png 158w,
+/static/21c5b4167b7f103b9dcedaecd2e78b56/6bdcf/input_delay.png 315w,
+/static/21c5b4167b7f103b9dcedaecd2e78b56/f058b/input_delay.png 630w,
+/static/21c5b4167b7f103b9dcedaecd2e78b56/40601/input_delay.png 945w,
+/static/21c5b4167b7f103b9dcedaecd2e78b56/77672/input_delay.png 1060w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Event Callback &lt;em&gt;( Processing Time )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;time for event callbacks to run&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/616ec1b9fba1e4b077f300671ffc091d/77672/event_callback.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.911392405063296%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABEElEQVR42q2Q60oDMRBG+/4vVUWKUrFYQVGENux227WbdLfda65HNkVBRfzjBydhJjNfhpnwi7TWdF1H3/fxbpsm5v7SZDycc7F4xBgTY1kUCCHIsow0TRDphqIssQRMCBhrY+0wDOhBx55Pw6ZpSJIEa21Mhu/feg/lEfaK8FYQ8j1Bm/hktGEtViglz4YfUykp8d7jbYs3VcTpCjeU+KbAiWfcy5KwfgLxSKgVXWfodM3t/Q1lWZ4Nd7stUkratuV0qqnyJTKZotIrZHKJFBcUYoraziiyGbWco49zTvmCh8WKu9dr8mrzdYejxsUrpTDWYa2PaOOQ6oCUI4q+G7DGcThUMR6HCD5Efhj+l94BhFAdu8Vr1zsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;event_callback&quot;
+        title=&quot;&quot;
+        src=&quot;/static/616ec1b9fba1e4b077f300671ffc091d/f058b/event_callback.png&quot;
+        srcset=&quot;/static/616ec1b9fba1e4b077f300671ffc091d/c26ae/event_callback.png 158w,
+/static/616ec1b9fba1e4b077f300671ffc091d/6bdcf/event_callback.png 315w,
+/static/616ec1b9fba1e4b077f300671ffc091d/f058b/event_callback.png 630w,
+/static/616ec1b9fba1e4b077f300671ffc091d/40601/event_callback.png 945w,
+/static/616ec1b9fba1e4b077f300671ffc091d/77672/event_callback.png 1060w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Presentation Delay&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;time for the browser to present the next frame &lt;em&gt;( visual result of the interaction )&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;위 세개의 phase의 합산 === Total Interaction Latency&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;aside&gt;
+💡💡💡 그래서 INP 최적화는 곧 위 세 개의 phase를 최적화한다는 것
+&lt;/aside&gt;
+&lt;h2&gt;Optimize Input Delay&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Input Delay 줄이기
+&lt;a href=&quot;https://web.dev/articles/optimize-input-delay&quot;&gt;https://web.dev/articles/optimize-input-delay&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;간략하게 요약하자면, Input Delay를 줄이려면 아래 세 가지를 하라고 합니다.&lt;/p&gt;
+&lt;h3&gt;recurring timers를 피해라 &lt;em&gt;(&lt;/em&gt; &lt;code class=&quot;language-text&quot;&gt;*setInterval*&lt;/code&gt; &lt;em&gt;)&lt;/em&gt;&lt;/h3&gt;
+&lt;aside&gt;
+💡 setInterval 사용할 때 main thread를 너무 잡아먹지 않게 setInterval 내에서 하는 일을 줄이라는 게 요지인 듯 합니다.
+&lt;/aside&gt;
+&lt;h3&gt;메인 쓰레드에 돌아갈 코드를 잘게 쪼개라 &lt;em&gt;( breaking up long tasks )&lt;/em&gt;&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;textBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;input&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;inputEvent&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// UI 업데이트를 다음 프레임에서 바로 볼 수 있도록&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// UI 업데이트는 즉각적으로 하기&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;updateTextBox&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;inputEvent&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// Use `setTimeout` to defer all other work until at lehast the next&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// frame by queuing a task in a `requestAnimationFrame()` callback.&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;requestAnimationFrame&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; text &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; textBox&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;textContent
+      &lt;span class=&quot;token function&quot;&gt;updateWordCount&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;checkSpelling&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;saveChanges&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Interaction Overlap 의 문제&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;network 요청때문에 느리다면, Debouncing, &lt;code class=&quot;language-text&quot;&gt;AbortController&lt;/code&gt;의 fetch abort로 해결해라&lt;/li&gt;
+&lt;li&gt;애니메이션때문에 느리다면, JS 애니메이션 말고 css를 사용하고, composition 애니메이션으로 해결하려고 노력해라&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1372b0877bb76c3fd22d34a05d0cc938/07a9c/interaction_overlap.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 38.60759493670886%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR42m2QbW/TMBSF+/9/yL4xBhoTIDbxaRICBqNjNE3jNsma16bxlnVNHTsPcrt0oeJKV/f42Ofo+A6klNR1jTEtRmtkfEHhv6YI3pDPjpHzM9Q6QdULquWEeHRM5p4Qj96STU65n52gHgOaRm/1A2MMbdvSVR5+xr0+ogg/kPtnrIsLmuqK5vEXSXBJlXzkaXHOXHwiHJ/yMH/H5n64DWR9BjZdv5RqKEu5xVWlcCYp3jQi9sc4w5/cDh+YiTv+XJ1z/eML324cRkKQRg5a1QyssJ9QqQ1SljtcK9JsSZpmLKfvcb8fEU4aosBl/PUV4veQqEjwxByZC1qz+dfQzrIsiZOY1WpF/25drxD+DXmREoQh0TKj5UW3//Khod1p15a209ZiUeC6DmI6xfM87gIf3ahnnUHr5v+GfXy4DqOf9sJ9P7/RWu8Mu1T9dIdcf1phh7u25x3f8hd/I2Ms3/nzJwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;interaction_overlap&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1372b0877bb76c3fd22d34a05d0cc938/f058b/interaction_overlap.png&quot;
+        srcset=&quot;/static/1372b0877bb76c3fd22d34a05d0cc938/c26ae/interaction_overlap.png 158w,
+/static/1372b0877bb76c3fd22d34a05d0cc938/6bdcf/interaction_overlap.png 315w,
+/static/1372b0877bb76c3fd22d34a05d0cc938/f058b/interaction_overlap.png 630w,
+/static/1372b0877bb76c3fd22d34a05d0cc938/40601/interaction_overlap.png 945w,
+/static/1372b0877bb76c3fd22d34a05d0cc938/78612/interaction_overlap.png 1260w,
+/static/1372b0877bb76c3fd22d34a05d0cc938/07a9c/interaction_overlap.png 1440w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;after you&apos;ve interacted with one element,
+you make another interaction with the page before the initial interaction has had a chance to render the next frame.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2&gt;Optimize Event Callback &lt;em&gt;( Processing Time )&lt;/em&gt;&lt;/h2&gt;
+&lt;h3&gt;Visual Updates 이외의 task들은 Yield하기&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;아래와 일맥상통하는 얘기
+메인 쓰레드에 돌아갈 코드를 잘게 쪼개라 &lt;em&gt;( breaking up long tasks )&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;다만 여기서는 &lt;code class=&quot;language-text&quot;&gt;requestAnimationFrame&lt;/code&gt;을 사용해서, visual feedback을 블락하지 않는 것에 더 초점을 두었네요!&lt;/p&gt;
+&lt;p&gt;위 Optimize Input Delay에서 썼던 코드보다 더 큰 장점은, &lt;code class=&quot;language-text&quot;&gt;requestAnimationFrame&lt;/code&gt;을 통해 UI update와는 무관한 코드가 next frame을 블락하지 않도록 하면서, 모든 브라우저에서 동작한다는 거라네요&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;Untitled%205.png&quot; alt=&quot;Untitled&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;레이아웃 Thrashing 줄이기&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing&quot;&gt;https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Layout Thrashing?
+&lt;em&gt;-forced synchronous layout-&lt;/em&gt;
+&lt;strong&gt;JavaScript로 스타일을 업데이트할 때 발생&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d6514850918697c937767c05451ae769/acf8f/layout_thrashing.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 15.822784810126581%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6klEQVR42hXMzUqDAADAcR8u6CmCDn0QdalgnTLqHaLAQ7cuYek+REvTrRZF7cOgctOFLlkdcqC5Gezwj34P8BNmqcc0PKX4UCgimd9Yxm/HPNkTujcpz3cZbSel4+R0Hj+xghpmr4YTGNiBwVWvitXX0D2VMAkQ/rNva57x/TJJc5Gf5hzG0TnHYoIkRkhijLQ35GR/xOHBKyV1nVJllS11ie3yCjuVNXa1TTbkBfQ3BWGW+UzCM4qhyjS6oIgV/PaIlp3j3ma8PGR0GyluPcdtfXEdaFx6VRoDi/rAxOxr2L6O4ZWJxu/8AYghxAlNIqVwAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;layout_thrasing&quot;
+        title=&quot;&quot;
+        src=&quot;/static/d6514850918697c937767c05451ae769/f058b/layout_thrashing.png&quot;
+        srcset=&quot;/static/d6514850918697c937767c05451ae769/c26ae/layout_thrashing.png 158w,
+/static/d6514850918697c937767c05451ae769/6bdcf/layout_thrashing.png 315w,
+/static/d6514850918697c937767c05451ae769/f058b/layout_thrashing.png 630w,
+/static/d6514850918697c937767c05451ae769/40601/layout_thrashing.png 945w,
+/static/d6514850918697c937767c05451ae769/78612/layout_thrashing.png 1260w,
+/static/d6514850918697c937767c05451ae769/acf8f/layout_thrashing.png 1340w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;원래는 JS run → style calculation → layout 인데, Layout Thrashing이 발생하면
+JS run → style calculation → layout → JS run → style calculation → layout 이 된다&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;logBoxHeight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;box&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;offsetHeight&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  box&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;super-big&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;//  console.log(box.offsetHeight);&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Optimize Presentation Delay&lt;/h2&gt;
+&lt;h3&gt;DOM size 최소화&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.dev/articles/dom-size-and-interactivity&quot;&gt;https://web.dev/articles/dom-size-and-interactivity&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;DOM size 와 rendering work 는 linear한 관계는 아니라고 하네요 ㅎㅎ&lt;/p&gt;
+&lt;p&gt;DOM size가 크다의 기준?
+&lt;a href=&quot;https://developer.chrome.com/en/docs/lighthouse/performance/dom-size/#how-the-lighthouse-dom-size-audit-fails&quot;&gt;Lighthouse에 따르면 1,400개의 노드를 넘으면 크다고 봅니다&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Flattening DOM Structure&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+   
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+       
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+           
+      &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+               
+        &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- Contents --&gt;&lt;/span&gt;
+             
+      &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+         
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+     
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;컴포넌트 기반 라이브러리 사용중이면 &lt;code class=&quot;language-text&quot;&gt;Fragment&lt;/code&gt; 적극 활용해라!&lt;/p&gt;
+&lt;h3&gt;DOM size를 줄일 수 없다면?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Additive Approach&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;lazy load HTML에 관한 얘기&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(첫 렌더때 모든 HTML을 가져오지 않고 필요할 때만 가져오는 이 방식에서)
+주의할 점은 user interaction에 대해 HTML을 가져올 때, in-flight network request는 INP를 계산할 때 제외되지만, ui latency가 있을 수 있다
+→ skeleton 등으로 해결해야함&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;CSS-selector 복잡도 줄이기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.dev/articles/reduce-the-scope-and-complexity-of-style-calculations&quot;&gt;https://web.dev/articles/reduce-the-scope-and-complexity-of-style-calculations&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.box:nth-last-child(-n+1) .title&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/* styles */&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;BEM 스타일을 사용하는 이유 : 단순한 CSS selector 사용을 위해.. → 성능 이점도 존재했다!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;content-visibility&lt;/code&gt; 사용하기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.dev/articles/content-visibility&quot;&gt;https://web.dev/articles/content-visibility&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;첫 렌더때 rendering work를 줄여준다&lt;/li&gt;
+&lt;li&gt;user interaction으로 인해 DOM이 변경될 때 offscreen 엘리먼트들의 rendering work를 스킵한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;strong&gt;Be aware of performance costs when rendering HTML using JavaScript&lt;/strong&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.dev/articles/client-side-rendering-of-html-and-interactivity&quot;&gt;https://web.dev/articles/client-side-rendering-of-html-and-interactivity&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;saveSettings&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// Create an array of functions to run:&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; tasks &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;validateForm&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; showSpinner&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; saveToDatabase&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; updateUI&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sendAnalytics&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;// Loop over the tasks:&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tasks&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// Shift the first task off the tasks array:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; task &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; tasks&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;shift&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// Run the task:&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// Yield to the main thread:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;yieldToMain&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[URL SearchParams 와 react-query의 편리한 data fetching orchestration]]></title><description><![CDATA[react-query로 client state와 server state의 분리 를 통한 source of truth를 실현한 Tanner Linsely가 만든 다른 오픈소스 프로젝트인 tanstack-router를 우연히 접했었는데,
 tanstack…]]></description><link>https://github.com/codeKiuk/2023-02-28-url-search-params/</link><guid isPermaLink="false">https://github.com/codeKiuk/2023-02-28-url-search-params/</guid><pubDate>Tue, 28 Feb 2023 16:04:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;react-query&lt;/strong&gt;로 &lt;em&gt;client state와 server state의 분리&lt;/em&gt; 를 통한 &lt;strong&gt;source of truth&lt;/strong&gt;를 실현한 &lt;a href=&quot;https://github.com/tannerlinsley&quot;&gt;Tanner Linsely&lt;/a&gt;가 만든 다른 오픈소스 프로젝트인 &lt;strong&gt;tanstack-router&lt;/strong&gt;를 우연히 접했었는데,
 &lt;strong&gt;tanstack-router&lt;/strong&gt;에서 강조한 url search params를 활용한 data fetching orchestration을 간단하게 적용해봤다. (물론 크게 복잡한 작업은 아니어서 tanstack-router 를 적용하진 않았고 plain하게 URL SearchParams를 조작했다.)&lt;/p&gt;
